@@ -1,0 +1,25 @@
+---
+title: ""
+format: html
+---
+
+## Approaches to aligning your data
+
+-  Collect in DwC directly
+
+-  Add DwC “translation layer” to existing database
+
+-  Build a new standards-based system
+
+## Steps to alignment
+
+-  re-assign terms using standard vocabularies
+
+-  write package-level metadata in Ecological Metadata Language (EML)
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+---
+title: ""
+format: html
+---
+
+## What is a data standard? 
+
+*A technical specification that details the structure, organization, documentation, and format of data.*
+
+
+## Why use a data standard? 
+
+By implementing standards we go from data to regional syntheses efficiently
+
+- Using data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.
+- Data standards can save time and effort if used during data collection, but may be applied at other points in the data life cycle by restructuring and re-documenting the data. 
+
+![](img/data_standards_diagram.png)
+
+
+
+
+
+
+

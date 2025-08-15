@@ -5,13 +5,13 @@ format: html
 
 ## Workshop topics
 
-What data standards are and what they do, generally
+What data standards are and what they do
 
-Darwin Core’s structure and using it to standardize data
+Darwin Core structure 
 
-How to use Darwin Core standards with your existing data and in future projects
+Using Darwin Core with your existing data
 
-
+ 
 
 
 

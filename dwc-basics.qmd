@@ -1,0 +1,26 @@
+---
+title: ""
+format: html
+---
+
+## Darwin Core Archive
+
+![](img/DwC_archive.png)
+
+
+## Darwin Core basics
+
+-  OBIS minimum required fields:
+   -  eventID
+   -  eventDate
+   -  decimalLatitude
+   -  decimalLongitude
+   -  occurrenceID
+   -  occurrenceStatus (e.g. present/absent)
+   -  basisOfRecord (e.g. HumanObservation)
+   -  scientificName
+   
+- Extended measurement or fact (eMoF)
+
+
+

@@ -4,75 +4,75 @@
     "href": "index.html",
     "title": "Standardizing Data with Darwin Core",
     "section": "",
-    "text": "0.1 Workshop topics\nWhat data standards are and what they do, generally\nDarwin Core’s structure and using it to standardize data\nHow to use Darwin Core standards with your existing data and in future projects",
+    "text": "Workshop topics\nWhat data standards are and what they do\nDarwin Core structure\nUsing Darwin Core with your existing data",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Standardizing Data with Darwin Core</span>"
     ]
   },
   {
-    "objectID": "Untitled.html",
-    "href": "Untitled.html",
-    "title": "2  Untitled",
+    "objectID": "data-standards.html",
+    "href": "data-standards.html",
+    "title": "What is a data standard?",
     "section": "",
-    "text": "2.1 Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "text": "Why use a data standard?\nA technical specification that details the structure, organization, documentation, and format of data.\nBy implementing standards we go from data to regional syntheses efficiently",
     "crumbs": [
-      "What are data standards?",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Untitled</span>"
+      "Data standards",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is a data standard?</span>"
     ]
   },
   {
-    "objectID": "Untitled.html#running-code",
-    "href": "Untitled.html#running-code",
-    "title": "2  Untitled",
-    "section": "2.2 Running Code",
-    "text": "2.2 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "objectID": "data-standards.html#why-use-a-data-standard",
+    "href": "data-standards.html#why-use-a-data-standard",
+    "title": "What is a data standard?",
+    "section": "",
+    "text": "Using data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.\nData standards can save time and effort if used during data collection, but may be applied at other points in the data life cycle by restructuring and re-documenting the data.",
     "crumbs": [
-      "What are data standards?",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Untitled</span>"
+      "Data standards",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is a data standard?</span>"
     ]
   },
   {
-    "objectID": "Untitled2.html",
-    "href": "Untitled2.html",
-    "title": "3  Untitled",
+    "objectID": "dwc-basics.html",
+    "href": "dwc-basics.html",
+    "title": "Darwin Core Archive",
     "section": "",
-    "text": "3.1 Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "text": "Darwin Core basics",
     "crumbs": [
       "Darwin Core structure",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Untitled</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core Archive</span>"
     ]
   },
   {
-    "objectID": "Untitled2.html#running-code",
-    "href": "Untitled2.html#running-code",
-    "title": "3  Untitled",
-    "section": "3.2 Running Code",
-    "text": "3.2 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "objectID": "dwc-basics.html#darwin-core-basics",
+    "href": "dwc-basics.html#darwin-core-basics",
+    "title": "Darwin Core Archive",
+    "section": "",
+    "text": "OBIS minimum required fields:\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\noccurrenceID\noccurrenceStatus (e.g. present/absent)\nbasisOfRecord (e.g. HumanObservation)\nscientificName\n\nExtended measurement or fact (eMoF)",
     "crumbs": [
       "Darwin Core structure",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Untitled</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core Archive</span>"
     ]
   },
   {
-    "objectID": "Untitled3.html",
-    "href": "Untitled3.html",
-    "title": "4  Untitled",
+    "objectID": "align-your-data.html",
+    "href": "align-your-data.html",
+    "title": "Approaches to aligning your data",
     "section": "",
-    "text": "4.1 Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "text": "Steps to alignment",
     "crumbs": [
       "Aligning your data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Untitled</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Approaches to aligning your data</span>"
     ]
   },
   {
-    "objectID": "Untitled3.html#running-code",
-    "href": "Untitled3.html#running-code",
-    "title": "4  Untitled",
-    "section": "4.2 Running Code",
-    "text": "4.2 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "objectID": "align-your-data.html#steps-to-alignment",
+    "href": "align-your-data.html#steps-to-alignment",
+    "title": "Approaches to aligning your data",
+    "section": "",
+    "text": "re-assign terms using standard vocabularies\nwrite package-level metadata in Ecological Metadata Language (EML)",
     "crumbs": [
       "Aligning your data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Untitled</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Approaches to aligning your data</span>"
     ]
   }
 ]
