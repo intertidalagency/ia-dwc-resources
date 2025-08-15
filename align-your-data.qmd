@@ -1,9 +1,8 @@
 ---
-title: "  "
+title: "Approaches to aligning your data"
 format: html
 ---
 
-## Approaches to aligning your data
 
 -  Collect in DwC directly
 

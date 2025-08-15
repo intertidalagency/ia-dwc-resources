@@ -1,9 +1,7 @@
 ---
-title: "  "
+title: "What is a data standard?"
 format: html
 ---
-
-## What is a data standard? 
 
 *A technical specification that details the structure, organization, documentation, and format of data.*
 

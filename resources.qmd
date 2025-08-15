@@ -1,9 +1,8 @@
 ---
-title: "  "
+title: Resources
 format: html
 ---
 
-## Resources
 
 https://manual.obis.org/
 

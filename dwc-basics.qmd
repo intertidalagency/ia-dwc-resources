@@ -1,14 +1,14 @@
 ---
-title: "  "
+title: "Darwin Core"
 format: html
 ---
 
-## Darwin Core Archive
+## Archive
 
 ![](img/DwC_archive.png)
 
 
-## Darwin Core basics
+## Basics
 
 -  OBIS minimum required fields:
    -  eventID
