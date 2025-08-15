@@ -6,15 +6,9 @@ book:
   title: ""
   chapters: 
     - index.qmd
-    - part: "Data standards"
-      chapters: 
-        - data-standards.qmd
-    - part: "Darwin Core structure"
-      chapters: 
-        - dwc-basics.qmd
-    - part: "Aligning your data"
-      chapters: 
-        - align-your-data.qmd
+    - data-standards.qmd
+    - dwc-basics.qmd
+    - align-your-data.qmd
   page-navigation: false
   favicon: /img/Intertidal-ProfilePic-Aqua-Bold.png
   navbar: 
