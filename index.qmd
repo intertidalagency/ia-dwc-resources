@@ -1,0 +1,20 @@
+---
+title: "Standardizing Data with Darwin Core"
+format: html
+---
+
+## Workshop topics
+
+What data standards are and what they do, generally
+
+Darwin Core’s structure and using it to standardize data
+
+How to use Darwin Core standards with your existing data and in future projects
+
+
+
+
+
+
+
+

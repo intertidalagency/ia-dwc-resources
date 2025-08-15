@@ -1,0 +1,78 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Standardizing Data with Darwin Core",
+    "section": "",
+    "text": "0.1 Workshop topics\nWhat data standards are and what they do, generally\nDarwin Core’s structure and using it to standardize data\nHow to use Darwin Core standards with your existing data and in future projects",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Standardizing Data with Darwin Core</span>"
+    ]
+  },
+  {
+    "objectID": "Untitled.html",
+    "href": "Untitled.html",
+    "title": "2  Untitled",
+    "section": "",
+    "text": "2.1 Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "What are data standards?",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Untitled</span>"
+    ]
+  },
+  {
+    "objectID": "Untitled.html#running-code",
+    "href": "Untitled.html#running-code",
+    "title": "2  Untitled",
+    "section": "2.2 Running Code",
+    "text": "2.2 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "What are data standards?",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Untitled</span>"
+    ]
+  },
+  {
+    "objectID": "Untitled2.html",
+    "href": "Untitled2.html",
+    "title": "3  Untitled",
+    "section": "",
+    "text": "3.1 Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Darwin Core structure",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Untitled</span>"
+    ]
+  },
+  {
+    "objectID": "Untitled2.html#running-code",
+    "href": "Untitled2.html#running-code",
+    "title": "3  Untitled",
+    "section": "3.2 Running Code",
+    "text": "3.2 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Darwin Core structure",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Untitled</span>"
+    ]
+  },
+  {
+    "objectID": "Untitled3.html",
+    "href": "Untitled3.html",
+    "title": "4  Untitled",
+    "section": "",
+    "text": "4.1 Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Aligning your data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Untitled</span>"
+    ]
+  },
+  {
+    "objectID": "Untitled3.html#running-code",
+    "href": "Untitled3.html#running-code",
+    "title": "4  Untitled",
+    "section": "4.2 Running Code",
+    "text": "4.2 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Aligning your data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Untitled</span>"
+    ]
+  }
+]

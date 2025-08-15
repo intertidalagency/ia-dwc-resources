@@ -1,0 +1,38 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: ""
+  chapters: 
+    - index.qmd
+    - part: "What are data standards?"
+      chapters: 
+        - Untitled.qmd
+    - part: "Darwin Core structure"
+      chapters: 
+        - Untitled2.qmd
+    - part: "Aligning your data"
+      chapters: 
+        - Untitled3.qmd
+  page-navigation: false
+  favicon: /img/Intertidal-ProfilePic-Aqua-Bold.png
+  navbar: 
+    title: false
+    background: "#034969"
+    logo: /img/Intertidal_PrimaryLogo_Bold_White.png
+    logo-href: https://intertidal.agency/
+  search: 
+    location: sidebar
+    type: textbox
+  sidebar:
+    style: "floating"
+    type: "light"
+    background: "#034969"
+    alignment: "left"
+    border: false
+    
+    
+    
+    
+    
