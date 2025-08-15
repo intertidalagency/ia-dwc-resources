@@ -9,6 +9,7 @@ book:
     - data-standards.qmd
     - dwc-basics.qmd
     - align-your-data.qmd
+    - resources.qmd
   page-navigation: false
   favicon: /img/Intertidal-ProfilePic-Aqua-Bold.png
   navbar: 

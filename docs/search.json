@@ -12,61 +12,81 @@
   {
     "objectID": "data-standards.html",
     "href": "data-standards.html",
-    "title": "What is a data standard?",
+    "title": "",
     "section": "",
-    "text": "Why use a data standard?\nA technical specification that details the structure, organization, documentation, and format of data.\nBy implementing standards we go from data to regional syntheses efficiently",
+    "text": "What is a data standard?\nA technical specification that details the structure, organization, documentation, and format of data.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is a data standard?</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>data-standards.html</span>"
     ]
   },
   {
     "objectID": "data-standards.html#why-use-a-data-standard",
     "href": "data-standards.html#why-use-a-data-standard",
-    "title": "What is a data standard?",
-    "section": "",
-    "text": "Using data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.\nData standards can save time and effort if used during data collection, but may be applied at other points in the data life cycle by restructuring and re-documenting the data.",
+    "title": "",
+    "section": "Why use a data standard?",
+    "text": "Why use a data standard?\nBy implementing standards we go from data to regional syntheses efficiently\n\nUsing data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.\nData standards can save time and effort if used during data collection, but may be applied at other points in the data life cycle by restructuring and re-documenting the data.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is a data standard?</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>data-standards.html</span>"
     ]
   },
   {
     "objectID": "dwc-basics.html",
     "href": "dwc-basics.html",
-    "title": "Darwin Core Archive",
+    "title": "",
     "section": "",
-    "text": "Darwin Core basics",
+    "text": "Darwin Core Archive",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core Archive</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>dwc-basics.html</span>"
     ]
   },
   {
     "objectID": "dwc-basics.html#darwin-core-basics",
     "href": "dwc-basics.html#darwin-core-basics",
-    "title": "Darwin Core Archive",
-    "section": "",
-    "text": "OBIS minimum required fields:\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\noccurrenceID\noccurrenceStatus (e.g. present/absent)\nbasisOfRecord (e.g. HumanObservation)\nscientificName\n\nExtended measurement or fact (eMoF)",
+    "title": "",
+    "section": "Darwin Core basics",
+    "text": "Darwin Core basics\n\nOBIS minimum required fields:\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\noccurrenceID\noccurrenceStatus (e.g. present/absent)\nbasisOfRecord (e.g. HumanObservation)\nscientificName\n\nExtended measurement or fact (eMoF)",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core Archive</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>dwc-basics.html</span>"
     ]
   },
   {
     "objectID": "align-your-data.html",
     "href": "align-your-data.html",
-    "title": "Approaches to aligning your data",
+    "title": "",
     "section": "",
-    "text": "Steps to alignment",
+    "text": "Approaches to aligning your data",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Approaches to aligning your data</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>align-your-data.html</span>"
+    ]
+  },
+  {
+    "objectID": "align-your-data.html#approaches-to-aligning-your-data",
+    "href": "align-your-data.html#approaches-to-aligning-your-data",
+    "title": "",
+    "section": "",
+    "text": "Collect in DwC directly\nAdd DwC “translation layer” to existing database\nBuild a new standards-based system",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>align-your-data.html</span>"
     ]
   },
   {
     "objectID": "align-your-data.html#steps-to-alignment",
     "href": "align-your-data.html#steps-to-alignment",
-    "title": "Approaches to aligning your data",
-    "section": "",
-    "text": "re-assign terms using standard vocabularies\nwrite package-level metadata in Ecological Metadata Language (EML)",
+    "title": "",
+    "section": "Steps to alignment",
+    "text": "Steps to alignment\n\nre-assign terms using standard vocabularies\nwrite package-level metadata in Ecological Metadata Language (EML)",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Approaches to aligning your data</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>align-your-data.html</span>"
+    ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "",
+    "section": "",
+    "text": "Resources\nhttps://manual.obis.org/",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>resources.html</span>"
     ]
   }
 ]
