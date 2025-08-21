@@ -4,6 +4,19 @@ project:
 
 book:
   title: ""
+  # authors:
+  #   - name: Rachael Blake
+  #     orcid: 0000-0003-1689-0557
+  #     affiliations: 
+  #       - name: Intertidal Agency
+  #   - Steve Formel
+  #     orcid: 0000-0003-1689-0557
+  #     affiliations: 
+  #       - name: Formel Data Services
+  #   - Kate Wing
+  #     orcid: 0000-0003-1689-0557
+  #     affiliations: 
+  #       - name: Intertidal Agency
   chapters: 
     - index.qmd
     - data-standards.qmd

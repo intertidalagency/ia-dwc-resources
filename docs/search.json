@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Standardizing Data with Darwin Core",
     "section": "",
-    "text": "Workshop topics\nWhat data standards are and what they do\nDarwin Core structure\nUsing Darwin Core with your existing data",
+    "text": "This guide contains materials associated with an introductory workshop on aligning data to the Darwin Core data standard.\n\nWorkshop topics\n\nWhat data standards are and what they do\nDarwin Core structure\nUsing Darwin Core with your existing data",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Standardizing Data with Darwin Core</span>"
     ]
@@ -12,61 +12,61 @@
   {
     "objectID": "data-standards.html",
     "href": "data-standards.html",
-    "title": "What is a data standard?",
+    "title": "What data standards are and what they do",
     "section": "",
-    "text": "Why use a data standard?\nA technical specification that details the structure, organization, documentation, and format of data.\nBy implementing standards we go from data to regional syntheses efficiently",
+    "text": "What is a data standard?\nA technical specification that details the structure, organization, documentation, and format of data.\nTechnical data standards pertain to organizing the data and documenting how data was collected; they do not provide guidelines for how data should be collected. They are usually machine-testable, and enable machines to exchange data.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is a data standard?</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What data standards are and what they do</span>"
     ]
   },
   {
     "objectID": "data-standards.html#why-use-a-data-standard",
     "href": "data-standards.html#why-use-a-data-standard",
-    "title": "What is a data standard?",
-    "section": "",
-    "text": "Using data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.\nData standards can save time and effort if used during data collection, but may be applied at other points in the data life cycle by restructuring and re-documenting the data.",
+    "title": "What data standards are and what they do",
+    "section": "Why use a data standard?",
+    "text": "Why use a data standard?\nIn studying the US Atlantic ocean, implementing standards enable us to go from data to regional syntheses efficiently.\n\nUsing data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.\nData standards can save time and effort if used during data collection, but may be applied at other points in the data life cycle by restructuring and re-documenting the data.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is a data standard?</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What data standards are and what they do</span>"
     ]
   },
   {
     "objectID": "dwc-basics.html",
     "href": "dwc-basics.html",
-    "title": "Darwin Core",
+    "title": "Darwin Core structure",
     "section": "",
-    "text": "Archive",
+    "text": "Why Darwin Core?",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core structure</span>"
     ]
   },
   {
-    "objectID": "dwc-basics.html#basics",
-    "href": "dwc-basics.html#basics",
-    "title": "Darwin Core",
-    "section": "Basics",
-    "text": "Basics\n\nOBIS minimum required fields:\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\noccurrenceID\noccurrenceStatus (e.g. present/absent)\nbasisOfRecord (e.g. HumanObservation)\nscientificName\n\nExtended measurement or fact (eMoF)",
+    "objectID": "dwc-basics.html#darwin-core-basics",
+    "href": "dwc-basics.html#darwin-core-basics",
+    "title": "Darwin Core structure",
+    "section": "Darwin Core Basics",
+    "text": "Darwin Core Basics\n\n\nOBIS minimum required fields:\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\noccurrenceID\noccurrenceStatus (e.g. present/absent)\nbasisOfRecord (e.g. HumanObservation)\nscientificName\n\nExtended measurement or fact (eMoF)",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core structure</span>"
     ]
   },
   {
     "objectID": "align-your-data.html",
     "href": "align-your-data.html",
-    "title": "Approaches to aligning your data",
+    "title": "Using Darwin Core with your existing data",
     "section": "",
     "text": "Steps to alignment",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Approaches to aligning your data</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Using Darwin Core with your existing data</span>"
     ]
   },
   {
     "objectID": "align-your-data.html#steps-to-alignment",
     "href": "align-your-data.html#steps-to-alignment",
-    "title": "Approaches to aligning your data",
+    "title": "Using Darwin Core with your existing data",
     "section": "",
     "text": "re-assign terms using standard vocabularies\nwrite package-level metadata in Ecological Metadata Language (EML)",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Approaches to aligning your data</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Using Darwin Core with your existing data</span>"
     ]
   },
   {

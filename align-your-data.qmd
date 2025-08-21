@@ -1,5 +1,5 @@
 ---
-title: "Approaches to aligning your data"
+title: "Using Darwin Core with your existing data"
 format: html
 ---
 

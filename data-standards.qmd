@@ -1,14 +1,18 @@
 ---
-title: "What is a data standard?"
+title: "What data standards are and what they do"
 format: html
 ---
 
+## What is a data standard?
+
 *A technical specification that details the structure, organization, documentation, and format of data.*
+
+Technical data standards pertain to organizing the data and documenting how data was collected; they do not provide guidelines for how data should be collected. They are usually machine-testable, and enable machines to exchange data.  
 
 
 ## Why use a data standard? 
 
-By implementing standards we go from data to regional syntheses efficiently
+In studying the US Atlantic ocean, implementing standards enable us to go from data to regional syntheses efficiently.  
 
 - Using data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.
 - Data standards can save time and effort if used during data collection, but may be applied at other points in the data life cycle by restructuring and re-documenting the data. 

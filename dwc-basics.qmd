@@ -1,14 +1,17 @@
 ---
-title: "Darwin Core"
+title: "Darwin Core structure"
 format: html
 ---
 
-## Archive
+## Why Darwin Core? 
+
+
+
+## Darwin Core Basics
 
 ![](img/DwC_archive.png)
 
 
-## Basics
 
 -  OBIS minimum required fields:
    -  eventID

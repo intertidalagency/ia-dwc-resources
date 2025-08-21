@@ -3,13 +3,15 @@ title: "Standardizing Data with Darwin Core"
 format: html
 ---
 
-## Workshop topics
+This guide contains materials associated with an introductory workshop on aligning data to the Darwin Core data standard.  
 
-What data standards are and what they do
+### Workshop topics
 
-Darwin Core structure 
+1. What data standards are and what they do
 
-Using Darwin Core with your existing data
+2. Darwin Core structure 
+
+3. Using Darwin Core with your existing data
 
  
 
