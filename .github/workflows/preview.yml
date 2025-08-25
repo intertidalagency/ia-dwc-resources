@@ -21,7 +21,7 @@ jobs:
           QUARTO_PROFILE=preview quarto render
 
       # Publish to gh-pages under previews/<branch-name>
-      - name: Deploy to gh-pages subdir
+      - name: Deploy to sf_draftmaterial subdir
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
