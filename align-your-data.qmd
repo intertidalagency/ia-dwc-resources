@@ -3,19 +3,35 @@ title: "Using Darwin Core with your existing data"
 format: html
 ---
 
+![](img/excalidraw_illustrations/many_paths.svg)
 
--  Collect in DwC directly
+There are many paths to the top of the mountain.
+See the [resources page](docs/resources.html) to view how others have shared their data with Darwin Core.
 
--  Add DwC “translation layer” to existing database
 
--  Build a new standards-based system
+### Consider incremental and strategic incorporation of standards.
+
+It can pay to keep local structures aligned with standards that are useful downstream of collection.
+
+![](img/excalidraw_illustrations/standards_in_the_data_life_cycle.svg)
+
+But, you may already have systems in place for collecting and working with your data.  Consider improving them by selectively working toward a standards-based system. Already standards based? Consider mapping to Darwin Core and publishing a Darwin Core Archive so that the data can be found and reused by the biodiversity science community.
 
 ## Steps to alignment
 
--  re-assign terms using standard vocabularies
+What does it look like to map existing data to Darwin Core? Here we share a hypothetical example of a fisheries trawl, and and another of satellite telemetry data from the ATN.
 
--  write package-level metadata in Ecological Metadata Language (EML)
+### Hypothetical Fisheries Trawl Data
 
+Walkthrough needed....
+
+![](img/excalidraw_illustrations/trawl_mapping.svg)
+
+### Example Satellite Telemetry Data
+
+Walkthrough needed....
+
+![](img/excalidraw_illustrations/atn_mapping.svg)  
 
 
 
