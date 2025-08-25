@@ -9,7 +9,40 @@ format: html
 
 Technical data standards pertain to organizing the data and documenting how data was collected; they do not provide guidelines for how data should be collected. They are usually machine-testable, and enable machines to exchange data.  
 
+### Some common scenarios
 
+::: {.grid .align-items-center}
+::: {.g-col-4}
+![](img/excalidraw_illustrations/no_standard.svg){width=80% fig-alt="A drawing of two people exchanging data without a standard.".lightbox}
+:::
+::: {.g-col-8}
+ 
+#### No standard
+The data is not referenced to any standard and the only way to understand it is to talk to the people who created it, or extract context from related work, like published papers.  Relies on human intuition, institutional knowledge and irregular documentation.
+:::
+:::
+
+::: {.grid .align-items-center}
+::: {.g-col-4}
+![](img/excalidraw_illustrations/closed_standard.svg){fig-alt="A drawing of a person giving data to a closed database." width=80% .lightbox} 
+:::
+::: {.g-col-8}
+#### Closed standard
+The data is not referenced to closed standard, one that is only accessible to a select group of people (e.g. a private company). Relies on closed documentation and institutional knowledge. This is different from FAIR data that has restricted access.
+
+:::
+:::
+
+::: {.grid .align-items-center}
+::: {.g-col-4}
+![](img/excalidraw_illustrations/open_standard.svg){fig-alt="A drawing of data being exchanged across the world via an open standard." width=100% .lightbox}
+:::
+::: {.g-col-8}
+#### Open standard
+Humans and machines never have to interact to be able to reuse each other’s data. Relies on FAIR, open data standard. Standard is well documented and machine readable. Some of the best arguments for using open standards include, increasing collective efficiency to make bigger and better products and to get and track credit for your work.
+
+:::
+:::
 ## Why use a data standard? 
 
 In studying the US Atlantic ocean, implementing standards enable us to go from data to regional syntheses efficiently.  
@@ -17,11 +50,12 @@ In studying the US Atlantic ocean, implementing standards enable us to go from d
 - Using data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.
 - Data standards can save time and effort if used during data collection, but may be applied at other points in the data life cycle by restructuring and re-documenting the data. 
 
-![](img/data_standards_diagram.png)
+![](img/excalidraw_illustrations/general_data_flow.svg)
 
+## Why use standards?
 
+In short, it can save you time and effort. There are many standards out there that apply to many facets of our data as scientists. Integration them into your workflows will increase your efficiency and increase the value of your data for people who reuse your data, inlcuding yourself.
 
-
-
+![](img/excalidraw_illustrations/efficiency.svg)
 
 
