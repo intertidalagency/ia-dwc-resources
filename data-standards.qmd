@@ -52,6 +52,11 @@ In studying the US Atlantic ocean, implementing standards enable us to go from d
 
 ![](img/excalidraw_illustrations/general_data_flow.svg)
 
+## Why use standards?
+
+In short, it can save you time and effort. There are many standards out there that apply to many facets of our data as scientists. Integration them into your workflows will increase your efficiency and increase the value of your data for people who reuse your data, inlcuding yourself.
+
+![](img/excalidraw_illustrations/efficiency.svg)
 
 
 
