@@ -1,0 +1,30 @@
+name: Quarto branch preview
+on:
+  push:
+    branches-ignore: [main]   # keep prod separate
+  workflow_dispatch:
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      # Optional: choose a Quarto profile for previews
+      - name: Render site
+        run: |
+          QUARTO_PROFILE=preview quarto render
+
+      # Publish to gh-pages under previews/<branch-name>
+      - name: Deploy to gh-pages subdir
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
+          destination_dir: previews/${{ github.ref_name }}
+          keep_files: true
