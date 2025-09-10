@@ -43,13 +43,15 @@ book:
     border: false
  
   page-footer: 
-    left: <img src="img/Intertidal_PrimaryLogo_Bold_White.png" width="105">
+    left: <a href="https://www.intertidalagency.org/">
+           <img src="img/Intertidal_PrimaryLogo_Bold_White.png" width="105">
+          </a>
     center: "Content licensed CC-BY 4.0, Intertidal Agency"
     right: 
       - icon: linkedin
         href: https://www.linkedin.com/company/intertidal-agency/
       - icon: github
-        href: https://github.com/intertidalagency/ia-guides-resources
+        href: https://github.com/intertidalagency/ia-dwc-resources
     background: "#0E7272"    
 
     
