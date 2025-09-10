@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Standardizing Data with Darwin Core",
     "section": "",
-    "text": "This guide contains materials associated with an introductory workshop on aligning data to the Darwin Core data standard.\n\nWorkshop topics\n\nWhat data standards are and what they do\nDarwin Core structure\nUsing Darwin Core with your existing data\n\n\n\n\n\n\nIf you’re part of the ROSA and RWSC communities, we’re helping map and publish data this fall. Contact us (kate@intertidal.agency) to join the pilot program!",
+    "text": "This guide contains materials associated with an introductory workshop co-hosted by ROSA and RWSC on aligning data to the Darwin Core data standard. Darwin Core is used to publish biological data to public repositories, like OBIS and GBIF, making it easier to find and reuse. This type of data publication is often a requirement from funders and managing agencies, and can add value and increase the impact of your data. We hope these materials provide you a better understanding of how data standards work and how Darwin Core can help get your data published.\n\nTopics covered include\n\nWhat data standards are and what they do\nDarwin Core structure\nUsing Darwin Core with your existing data\n\n\n\n\n\n\nIf you’re part of the ROSA and RWSC communities, we’re helping map and publish data this fall. Contact us (kate@intertidal.agency) to join the pilot program!",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Standardizing Data with Darwin Core</span>"
     ]
@@ -52,31 +52,31 @@
   {
     "objectID": "dwc-basics.html",
     "href": "dwc-basics.html",
-    "title": "Darwin Core structure",
+    "title": "Darwin Core Basics",
     "section": "",
     "text": "Why Darwin Core?\nThere is an existing standard, Darwin Core, that works well for sharing many types of biological data, especially those that are related to ecology. It’s been around for about 25 years and at least 3.5 billion data records are shared via Darwin Core to repositories like the Ocean Biodiversity Information System (OBIS).\nFor communities like those which have developed around offshore development, this means the data you help collect can travel further and be reused more quickly. More practically, Darwin Core also saves time for anyone managing data, because it cuts down on the cleaning and translation work usually needed to merge different formats. In short, it helps your data stay connected, useful, and impactful well beyond the original project.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core structure</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core Basics</span>"
     ]
   },
   {
     "objectID": "dwc-basics.html#why-darwin-core",
     "href": "dwc-basics.html#why-darwin-core",
-    "title": "Darwin Core structure",
+    "title": "Darwin Core Basics",
     "section": "",
     "text": "What kind of things fit into Darwin Core?\n\nGenerally speaking, Darwin Core can accommodate observations of biological organisms. Here are some of the data types that have already used Darwin Core to publish to repositories like OBIS and GBIF.\n\n\nThe Darwin Core Archive - a unit of data sharing\n\nBefore we get into the nitty gritty of Darwin Core, let’s talk about the Darwin Core Archive.\nThe Darwin Core Archive is the practical, long-lasting “package” for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g. CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.\n\n\nWhat about things that don’t fit into Darwin Core?\nInvariably, scientists measure variables that are unique to their data. So how do we share these in a standardized way? The folks at OBIS came up with a nice extension to Darwin Core that does just that, it’s called the Extended measurement or fact (eMoF) extension.\nAs you’ll see on the example from the Animal Telemetry Network (ATN), sometimes communities have strong standards in place, like the Movebank attribute dictionary, which prescribes standard definitions for variables related to telemetry. The eMoF extension allows for these to be put into a generalized, standard structure so that they can interoperate, and be reused with standards from other communities, like the Climate and Forecast (CF) Standard Names",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core structure</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core Basics</span>"
     ]
   },
   {
     "objectID": "dwc-basics.html#darwin-core-basics",
     "href": "dwc-basics.html#darwin-core-basics",
-    "title": "Darwin Core structure",
+    "title": "Darwin Core Basics",
     "section": "Darwin Core Basics",
     "text": "Darwin Core Basics\nOk, we’re ready for some nitty gritty. Darwin Core is essentially a list of terms you can use as column headers in your data. Of course, these terms can also be used in more sophisticated structures than spreadsheets, like relational databases, but let’s keep it simple for now.\nAn example of this is describing the date some data was collected. If we don’t use Darwin Core, you might call it date and I might call it collection day. If we agree to use Darwin Core, we know it will be eventDate and we will never have to discuss it.\n\n\nExample Term\nFor example,In Darwin Core, countryCode is a standard term that describes that a particular observation happened in a country. You describe them via two-letter country codes (like US for the United States or CA for Canada).\nAlthough there are many good arguments for using standards early in your data workflow, you don’t have create an entirely new workflow; you can map to countryCode, and other Darwin Core terms, anywhere in your data process. That way, whether you’re collecting records in the field, managing them in a database, or publishing them online, the meaning stays consistent and others will immediately understand what that field represents.\n\n\nWhat is required?\nOne of the most frequent questions we get is which terms are required in Darwin Core? The answer is none. The standard does not prescribe requirements, however repositories like OBIS and GBIF do.\nFor example, OBIS requires:\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\noccurrenceID\noccurrenceStatus (e.g. present/absent)\nbasisOfRecord (e.g. HumanObservation)\nscientificName\n\nWhen you look at those requirements, they’re rather simple: What did you see (scientificName), when (eventDate) and where (decimalLatitude/decimalLongtitude) did you see it, how did you see it (basisOfRecord), and how do we reference this record (eventID and occurrenceID).\nBut if that’s all the information Darwin Core communicated, it wouldn’t be very useful. On the next page we look at some specific examples. It comes down to what your scientific community expects of you. For example, it might be normal to collect the sex of the species in your field. In that case, it’s best to include sex as a term.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core structure</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core Basics</span>"
     ]
   },
   {

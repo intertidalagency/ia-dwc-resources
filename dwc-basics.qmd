@@ -1,5 +1,5 @@
 ---
-title: "Darwin Core structure"
+title: "Darwin Core Basics"
 format: html
 ---
 
