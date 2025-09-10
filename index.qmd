@@ -18,10 +18,14 @@ This guide contains materials associated with an introductory workshop co-hosted
 
 --------
 
-| ![](img/peep-standing-17.svg){fig-alt="A drawing of a woman with a question." width=150} | If you’re part of the ROSA and RWSC communities, we’re helping map and publish data this fall. Contact us ([kate@intertidal.agency](mailto:kate@intertidal.agency)) to join the pilot program! |
-|---|---|
+::: {.image-text-container}
+::: {.image-section}
+![](img/peep-standing-17.svg){.contact-image}
+:::
 
-
-
+::: {.text-section}
+If you're part of the ROSA and RWSC communities, we're helping map and publish data this fall. Contact us <span class="email-contact"><span data-name="kate" data-domain="intertidal" data-tld="agency"></span></span> to join the pilot program!
+:::
+:::
 
 

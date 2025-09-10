@@ -46,3 +46,25 @@ main .quarto-figure img {
   margin-left: 10px;
   text-decoration: none;
 }
+
+.email-contact span[data-name]:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.image-section {
+  flex-shrink: 0;
+}
+
+.contact-image {
+  width: 150px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 !important;
+}

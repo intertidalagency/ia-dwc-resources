@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-03d817e62d7b0f55938f6be268a91121.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -178,15 +181,14 @@ ul.task-list li input[type="checkbox"] {
 <li><p><a href="./align-your-data.html">Using Darwin Core with your existing data</a></p></li>
 </ol>
 <hr>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th><img src="img/peep-standing-17.svg" class="img-fluid" alt="A drawing of a woman with a question." width="150"></th>
-<th>If you’re part of the ROSA and RWSC communities, we’re helping map and publish data this fall. Contact us (<a href="mailto:kate@intertidal.agency">kate@intertidal.agency</a>) to join the pilot program!</th>
-</tr>
-</thead>
-
-</table>
+<div class="image-text-container">
+<div class="image-section">
+<p><a href="img/peep-standing-17.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/peep-standing-17.svg" class="contact-image img-fluid"></a></p>
+</div>
+<div class="text-section">
+<p>If you’re part of the ROSA and RWSC communities, we’re helping map and publish data this fall. Contact us <span class="email-contact"><span data-name="kate" data-domain="intertidal" data-tld="agency"></span></span> to join the pilot program!</p>
+</div>
+</div>
 
 
 </section>
@@ -618,6 +620,38 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

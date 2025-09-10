@@ -66,6 +66,8 @@ format:
     max-width: 900px
     fontcolor: "#ffffff"
     fontsize: 1.2rem
+    html-math-method: mathjax  # or katex
+    html-table-processing: none
     # linkcolor: "#30ACAE"
     number-sections: false
     backgroundcolor: "#034969"
