@@ -205,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>Before we get into the nitty-gritty of Darwin Core, let’s talk about the Darwin Core Archive.</p>
-<p>The Darwin Core Archive is the practical, long-lasting “package” for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g., CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.</p>
+<p>The Darwin Core Archive is the practical, long-lasting “package” for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g., CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story: who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.</p>
 </section>
 <section id="what-about-things-that-dont-fit-into-darwin-core" class="level3">
 <h3 class="anchored" data-anchor-id="what-about-things-that-dont-fit-into-darwin-core">What about things that don’t fit into Darwin Core?</h3>
@@ -242,7 +242,14 @@ ul.task-list li input[type="checkbox"] {
 <li><code>basisOfRecord</code> (e.g., HumanObservation)</li>
 <li><code>scientificName</code></li>
 </ul>
-<p>When you look at those requirements, they’re rather simple: What did you see (<code>scientificName</code>), when (<code>eventDate</code>) and where (<code>decimalLatitude</code>/<code>decimalLongitude</code>) did you see it, how did you see it (<code>basisOfRecord</code>), and how do we reference this record (<code>eventID</code> and <code>occurrenceID</code>).</p>
+<p>When you look at those requirements, they’re rather simple:</p>
+<ul>
+<li>what did you see: <code>scientificName</code></li>
+<li>when: <code>eventDate</code></li>
+<li>where: <code>decimalLatitude</code>/<code>decimalLongitude</code></li>
+<li>did you see it, how did you see it: <code>basisOfRecord</code></li>
+<li>how do we reference this record: <code>eventID</code> and <code>occurrenceID</code></li>
+</ul>
 <p>But if that’s all the information Darwin Core communicated, it wouldn’t be very useful. On the next page we look at some specific examples. It comes down to what your scientific community expects of you. For example, it might be normal to collect the <code>sex</code> of the species in your field. In that case, it’s best to include <code>sex</code> as a term.</p>
 
 

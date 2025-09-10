@@ -21,7 +21,7 @@ Generally speaking, Darwin Core can accommodate observations of biological organ
 
 Before we get into the nitty-gritty of Darwin Core, let's talk about the Darwin Core Archive.
 
-The Darwin Core Archive is the practical, long-lasting "package" for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g., CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.
+The Darwin Core Archive is the practical, long-lasting "package" for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g., CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story: who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.
 
 ### What about things that don't fit into Darwin Core?
 
@@ -58,6 +58,12 @@ For example, OBIS requires:
 - `basisOfRecord` (e.g., HumanObservation)
 - `scientificName`
 
-When you look at those requirements, they're rather simple: What did you see (`scientificName`), when (`eventDate`) and where (`decimalLatitude`/`decimalLongitude`) did you see it, how did you see it (`basisOfRecord`), and how do we reference this record (`eventID` and `occurrenceID`).
+When you look at those requirements, they're rather simple: 
+
+- what did you see: `scientificName`
+- when: `eventDate`
+- where: `decimalLatitude`/`decimalLongitude`
+- did you see it, how did you see it: `basisOfRecord`
+- how do we reference this record: `eventID` and `occurrenceID`
 
 But if that's all the information Darwin Core communicated, it wouldn't be very useful. On the next page we look at some specific examples. It comes down to what your scientific community expects of you. For example, it might be normal to collect the `sex` of the species in your field. In that case, it's best to include `sex` as a term.
