@@ -11,21 +11,24 @@ For communities like those which have developed around offshore development, thi
 
 ### What kind of things fit into Darwin Core?
 
+![](img/excalidraw_illustrations/data_types.svg)
+
 Generally speaking, Darwin Core can accommodate observations of biological organisms. Here are some of the data types that have already used Darwin Core to publish to repositories like OBIS and GBIF.
 
-![](img/excalidraw_illustrations/data_types.svg)
 
 ### The Darwin Core Archive - a unit of data sharing
 
 ![](img/excalidraw_illustrations/DwC-A.svg)
 
-Before we get into the nitty gritty of Darwin Core, let's talk about the Darinw Core Archive.  The Darwin Core Archive is the practical, long-lasting “package” for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g. CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations).  A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.
+Before we get into the nitty gritty of Darwin Core, let's talk about the Darwin Core Archive. 
+
+The Darwin Core Archive is the practical, long-lasting “package” for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g. CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations).  A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.
 
 ### What about things that don't fit into Darwin Core?
 
 Invariably, scientists measure variables that are unique to their data. So how do we share these in a standardized way?  The folks at OBIS came up with a nice extension to Darwin Core that does just that, it's called the `Extended measurement or fact (eMoF)` extension.
 
-As you'll seen on the example from the Animal Telemetry Network (ATN) below, sometimes communities have strong standards in place, like the [Movebank attribute dictionary](https://www.movebank.org/cms/movebank-content/movebank-attribute-dictionary), which prescribes standard definitions for variables related to telemetry.  The eMoF extension allows for these to be put into a generalized, standard structure so that they can interoperate, and be reused with standards from other communities, like the [Climate and Forecast (CF) Standard Names](https://vocab.nerc.ac.uk/collection/P07/current/) 
+As you'll see on the [example from the Animal Telemetry Network (ATN)](align-your-data.html#example-satellite-telemetry-data), sometimes communities have strong standards in place, like the [Movebank attribute dictionary](https://www.movebank.org/cms/movebank-content/movebank-attribute-dictionary), which prescribes standard definitions for variables related to telemetry.  The eMoF extension allows for these to be put into a generalized, standard structure so that they can interoperate, and be reused with standards from other communities, like the [Climate and Forecast (CF) Standard Names](https://vocab.nerc.ac.uk/collection/P07/current/) 
 
 ## Darwin Core Basics
 
@@ -43,7 +46,7 @@ Although there are many good arguments for using standards early in your data wo
 
 ### What is required?
 
-One of the most frequent questions we get is which terms are required in Darwin Core? The answer is none. The standard does not presribe requirements, however repositories like OBIS and GBIF do.
+One of the most frequent questions we get is which terms are required in Darwin Core? The answer is none. The standard does not prescribe requirements, however repositories like OBIS and GBIF do.
 
 For example, OBIS requires:
 
@@ -59,20 +62,3 @@ For example, OBIS requires:
 When you look at those requirements, they're rather simple: What did you see (`scientificName`), when (`eventDate`) and where (`decimalLatitude/decimalLongtitude`) did you see it, how did you see it (`basisOfRecord`), and how do we reference this record (`eventID` and `occurrenceID`).
 
 But if that's all the information Darwin Core communicated, it wouldn't be very useful.  On the next page we look at some specific examples.  It comes down to what your scientific community expects of you. For example, it might be normal to collect the `sex` of the species in your field. In that case, it's best to include `sex` as a term.
-
-
-## Steps to alignment
-
-What does it look like to map existing data to Darwin Core? Here we share a hypothetical example of a fisheries trawl, and and another of satellite telemetry data from the ATN.
-
-### Hypothetical Fisheries Trawl Data
-
-Walkthrough needed....
-
-![](img/excalidraw_illustrations/trawl_mapping.svg)
-
-### Example Satellite Telemetry Data
-
-Walkthrough needed....
-
-![](img/excalidraw_illustrations/atn_mapping.svg)  

@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-03d817e62d7b0f55938f6be268a91121.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -149,11 +152,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#example-term" id="toc-example-term" class="nav-link" data-scroll-target="#example-term">Example Term</a></li>
   <li><a href="#what-is-required" id="toc-what-is-required" class="nav-link" data-scroll-target="#what-is-required">What is required?</a></li>
   </ul></li>
-  <li><a href="#steps-to-alignment" id="toc-steps-to-alignment" class="nav-link" data-scroll-target="#steps-to-alignment">Steps to alignment</a>
-  <ul>
-  <li><a href="#hypothetical-fisheries-trawl-data" id="toc-hypothetical-fisheries-trawl-data" class="nav-link" data-scroll-target="#hypothetical-fisheries-trawl-data">Hypothetical Fisheries Trawl Data</a></li>
-  <li><a href="#example-satellite-telemetry-data" id="toc-example-satellite-telemetry-data" class="nav-link" data-scroll-target="#example-satellite-telemetry-data">Example Satellite Telemetry Data</a></li>
-  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -189,25 +187,26 @@ ul.task-list li input[type="checkbox"] {
 <p>For communities like those which have developed around offshore development, this means the data you help collect can travel further and be reused more quickly. More practically, Darwin Core also saves time for anyone managing data, because it cuts down on the cleaning and translation work usually needed to merge different formats. In short, it helps your data stay connected, useful, and impactful well beyond the original project.</p>
 <section id="what-kind-of-things-fit-into-darwin-core" class="level3">
 <h3 class="anchored" data-anchor-id="what-kind-of-things-fit-into-darwin-core">What kind of things fit into Darwin Core?</h3>
+<p><a href="img/excalidraw_illustrations/data_types.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/excalidraw_illustrations/data_types.svg" class="img-fluid"></a></p>
 <p>Generally speaking, Darwin Core can accommodate observations of biological organisms. Here are some of the data types that have already used Darwin Core to publish to repositories like OBIS and GBIF.</p>
-<p><img src="img/excalidraw_illustrations/data_types.svg" class="img-fluid"></p>
 </section>
 <section id="the-darwin-core-archive---a-unit-of-data-sharing" class="level3">
 <h3 class="anchored" data-anchor-id="the-darwin-core-archive---a-unit-of-data-sharing">The Darwin Core Archive - a unit of data sharing</h3>
-<p><img src="img/excalidraw_illustrations/DwC-A.svg" class="img-fluid"></p>
-<p>Before we get into the nitty gritty of Darwin Core, let’s talk about the Darinw Core Archive. The Darwin Core Archive is the practical, long-lasting “package” for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g.&nbsp;CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.</p>
+<p><a href="img/excalidraw_illustrations/DwC-A.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/excalidraw_illustrations/DwC-A.svg" class="img-fluid"></a></p>
+<p>Before we get into the nitty gritty of Darwin Core, let’s talk about the Darwin Core Archive.</p>
+<p>The Darwin Core Archive is the practical, long-lasting “package” for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g.&nbsp;CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.</p>
 </section>
 <section id="what-about-things-that-dont-fit-into-darwin-core" class="level3">
 <h3 class="anchored" data-anchor-id="what-about-things-that-dont-fit-into-darwin-core">What about things that don’t fit into Darwin Core?</h3>
 <p>Invariably, scientists measure variables that are unique to their data. So how do we share these in a standardized way? The folks at OBIS came up with a nice extension to Darwin Core that does just that, it’s called the <code>Extended measurement or fact (eMoF)</code> extension.</p>
-<p>As you’ll seen on the example from the Animal Telemetry Network (ATN) below, sometimes communities have strong standards in place, like the <a href="https://www.movebank.org/cms/movebank-content/movebank-attribute-dictionary">Movebank attribute dictionary</a>, which prescribes standard definitions for variables related to telemetry. The eMoF extension allows for these to be put into a generalized, standard structure so that they can interoperate, and be reused with standards from other communities, like the <a href="https://vocab.nerc.ac.uk/collection/P07/current/">Climate and Forecast (CF) Standard Names</a></p>
+<p>As you’ll see on the <a href="align-your-data.html#example-satellite-telemetry-data">example from the Animal Telemetry Network (ATN)</a>, sometimes communities have strong standards in place, like the <a href="https://www.movebank.org/cms/movebank-content/movebank-attribute-dictionary">Movebank attribute dictionary</a>, which prescribes standard definitions for variables related to telemetry. The eMoF extension allows for these to be put into a generalized, standard structure so that they can interoperate, and be reused with standards from other communities, like the <a href="https://vocab.nerc.ac.uk/collection/P07/current/">Climate and Forecast (CF) Standard Names</a></p>
 </section>
 </section>
 <section id="darwin-core-basics" class="level2">
 <h2 class="anchored" data-anchor-id="darwin-core-basics">Darwin Core Basics</h2>
 <p>Ok, we’re ready for some nitty gritty. Darwin Core is essentially a list of terms you can use as column headers in your data. Of course, these terms can also be used in more sophisticated structures than spreadsheets, like relational databases, but let’s keep it simple for now.</p>
 <p>An example of this is describing the date some data was collected. If we don’t use Darwin Core, you might call it <code>date</code> and I might call it <code>collection day</code>. If we agree to use Darwin Core, we know it will be <code>eventDate</code> and we will never have to discuss it.</p>
-<p><img src="img/excalidraw_illustrations/single_DwC_term.svg" class="img-fluid"></p>
+<p><a href="img/excalidraw_illustrations/single_DwC_term.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="img/excalidraw_illustrations/single_DwC_term.svg" class="img-fluid"></a></p>
 <section id="example-term" class="level3">
 <h3 class="anchored" data-anchor-id="example-term">Example Term</h3>
 <p>For example,In Darwin Core, <code>countryCode</code> is a standard term that describes that a particular observation happened in a country. You describe them via two-letter country codes (like <code>US</code> for the United States or <code>CA</code> for Canada).</p>
@@ -215,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-is-required" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-required">What is required?</h3>
-<p>One of the most frequent questions we get is which terms are required in Darwin Core? The answer is none. The standard does not presribe requirements, however repositories like OBIS and GBIF do.</p>
+<p>One of the most frequent questions we get is which terms are required in Darwin Core? The answer is none. The standard does not prescribe requirements, however repositories like OBIS and GBIF do.</p>
 <p>For example, OBIS requires:</p>
 <ul>
 <li><code>eventID</code></li>
@@ -229,20 +228,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>When you look at those requirements, they’re rather simple: What did you see (<code>scientificName</code>), when (<code>eventDate</code>) and where (<code>decimalLatitude/decimalLongtitude</code>) did you see it, how did you see it (<code>basisOfRecord</code>), and how do we reference this record (<code>eventID</code> and <code>occurrenceID</code>).</p>
 <p>But if that’s all the information Darwin Core communicated, it wouldn’t be very useful. On the next page we look at some specific examples. It comes down to what your scientific community expects of you. For example, it might be normal to collect the <code>sex</code> of the species in your field. In that case, it’s best to include <code>sex</code> as a term.</p>
-</section>
-</section>
-<section id="steps-to-alignment" class="level2">
-<h2 class="anchored" data-anchor-id="steps-to-alignment">Steps to alignment</h2>
-<p>What does it look like to map existing data to Darwin Core? Here we share a hypothetical example of a fisheries trawl, and and another of satellite telemetry data from the ATN.</p>
-<section id="hypothetical-fisheries-trawl-data" class="level3">
-<h3 class="anchored" data-anchor-id="hypothetical-fisheries-trawl-data">Hypothetical Fisheries Trawl Data</h3>
-<p>Walkthrough needed….</p>
-<p><img src="img/excalidraw_illustrations/trawl_mapping.svg" class="img-fluid"></p>
-</section>
-<section id="example-satellite-telemetry-data" class="level3">
-<h3 class="anchored" data-anchor-id="example-satellite-telemetry-data">Example Satellite Telemetry Data</h3>
-<p>Walkthrough needed….</p>
-<p><img src="img/excalidraw_illustrations/atn_mapping.svg" class="img-fluid"></p>
 
 
 </section>
@@ -675,6 +660,38 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
