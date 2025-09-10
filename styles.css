@@ -1,17 +1,48 @@
-/* Make all images 80% width and centered */
-img {
+/* Content images - 80% width and centered */
+main img {
   width: 80%;
-  height: auto;  /* This maintains aspect ratio */
+  height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* Ensure figures are also centered */
-.quarto-figure {
+main .quarto-figure {
   text-align: center;
 }
 
-.quarto-figure img {
+main .quarto-figure img {
   width: 80%;
   margin: 0 auto;
+}
+
+/* Custom footer styling */
+.custom-footer {
+  background-color: #0E7272;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer logo - specific styling that won't be affected */
+.footer-logo {
+  width: 105px !important;
+  height: auto !important;
+  display: inline !important;
+  margin: 0 !important;
+}
+
+.footer-right a {
+  color: white;
+  font-size: 1.2em;
+  margin-left: 10px;
+  text-decoration: none;
 }
