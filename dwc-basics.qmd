@@ -11,14 +11,14 @@ For communities like those which have developed around offshore development, thi
 
 ### What kind of things fit into Darwin Core?
 
-![](img/excalidraw_illustrations/data_types.svg)
+![](img/excalidraw_illustrations/data_types.svg){width="80%"}
 
 Generally speaking, Darwin Core can accommodate observations of biological organisms. Here are some of the data types that have already used Darwin Core to publish to repositories like OBIS and GBIF.
 
 
 ### The Darwin Core Archive - a unit of data sharing
 
-![](img/excalidraw_illustrations/DwC-A.svg)
+![](img/excalidraw_illustrations/DwC-A.svg){width="80%"}
 
 Before we get into the nitty gritty of Darwin Core, let's talk about the Darwin Core Archive. 
 
@@ -36,7 +36,7 @@ Ok, we're ready for some nitty gritty. Darwin Core is essentially a list of term
 
 An example of this is describing the date some data was collected. If we don't use Darwin Core, you might call it `date` and I might call it `collection day`. If we agree to use Darwin Core, we know it will be `eventDate` and we will never have to discuss it.
 
-![](img/excalidraw_illustrations/single_DwC_term.svg)
+![](img/excalidraw_illustrations/single_DwC_term.svg){width="80%"}
 
 ### Example Term
 
