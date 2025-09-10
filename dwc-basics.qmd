@@ -13,7 +13,7 @@ For communities like those which have developed around offshore development, thi
 
 <br>
 
-![Data types that fit Darwin Core](img/excalidraw_illustrations/data_types.svg){width="80%" fig-alt="Diagram showing various biological data types that can use Darwin Core"}
+![Data types that fit Darwin Core (*Click to enlarge*)](img/excalidraw_illustrations/data_types.svg){width="80%" fig-alt="Diagram showing various biological data types that can use Darwin Core"}
 
 Generally speaking, Darwin Core can accommodate observations of biological organisms. In the image above are some of the data types that have already used Darwin Core to publish to repositories like OBIS and GBIF.
 
@@ -24,7 +24,7 @@ Generally speaking, Darwin Core can accommodate observations of biological organ
 
 Before we get into the nitty-gritty of Darwin Core, let's talk about the Darwin Core Archive.
 
-![Darwin Core Archive structure](img/excalidraw_illustrations/DwC-A.svg){width="80%" fig-alt="Diagram showing the components of a Darwin Core Archive"}
+![Darwin Core Archive structure (*Click to enlarge*)](img/excalidraw_illustrations/DwC-A.svg){width="80%" fig-alt="Diagram showing the components of a Darwin Core Archive"}
 
 The Darwin Core Archive is the practical, long-lasting "package" for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g., CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story: who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.
 
@@ -40,7 +40,7 @@ OK, we're ready for some nitty-gritty. Darwin Core is essentially a list of term
 
 An example of this is describing the date some data was collected. If we don't use Darwin Core, you might call it `date` and I might call it `collection day`. If we agree to use Darwin Core, we know it will be `eventDate` and we will never have to discuss it.
 
-![Single Darwin Core term example](img/excalidraw_illustrations/single_DwC_term.svg){width="80%" fig-alt="Diagram showing how a single Darwin Core term standardizes data description"}
+![Single Darwin Core term example (*Click to enlarge*)](img/excalidraw_illustrations/single_DwC_term.svg){width="80%" fig-alt="Diagram showing how a single Darwin Core term standardizes data description"}
 
 ### Example Term
 

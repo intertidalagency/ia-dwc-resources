@@ -7,7 +7,7 @@ format: html
 
 It can pay to keep local structures aligned with standards that are useful downstream of collection.
 
-![Standards in the data lifecycle](img/excalidraw_illustrations/standards_in_the_data_life_cycle.svg){width="80%" fig-alt="Diagram showing how standards integrate into the data lifecycle"}
+![Standards in the data lifecycle (*Click to enlarge*)](img/excalidraw_illustrations/standards_in_the_data_life_cycle.svg){width="80%" fig-alt="Diagram showing how standards integrate into the data lifecycle"}
 
 However, you may already have systems in place for collecting and working with your data. Consider improving them by selectively working toward a standards-based system. Already standards-based? Consider mapping to Darwin Core and publishing a Darwin Core Archive so that the data can be found and reused by the biodiversity science community.
 
@@ -15,17 +15,17 @@ What does it look like to map existing data to Darwin Core? Below we share a hyp
 
 ## Example: Hypothetical Fisheries Trawl Data
 
-![Trawl data mapping overview](img/excalidraw_illustrations/trawl_mapping.svg){width="80%" fig-alt="Overview diagram of how trawl data maps to Darwin Core structure"}
+![Trawl data mapping overview (*Click to enlarge*)](img/excalidraw_illustrations/trawl_mapping.svg){width="80%" fig-alt="Overview diagram of how trawl data maps to Darwin Core structure"}
 
 Here we share data from a hypothetical fisheries trawl survey. In Darwin Core, these data would be coordinated over a couple of tables to describe the core data (what, when, where) and the additional data, like experimental and environmental covariates that are specific to this data type and study. Here, we've broken these up into a few different tables to make them easier to view.
 
-![Temporal data mapping](img/excalidraw_illustrations/trawl-when.svg){width="80%" fig-alt="Diagram showing how temporal data maps to Darwin Core terms"}
+![Temporal data mapping (*Click to enlarge*)](img/excalidraw_illustrations/trawl-when.svg){width="80%" fig-alt="Diagram showing how temporal data maps to Darwin Core terms"}
 
 Let's start on the left, with 'When'. This table demonstrates how variable names like 'Date' and 'Time' map to the Darwin Core terms `eventDate` and `eventTime` fairly directly. With trawl data, these might be captured as 'Start' and 'Stop' times, and that range can be captured within the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) that is used in Darwin Core.
 
 What may not be obvious is that Darwin Core events can be structured hierarchically, so individual time points, or ranges, can exist within parent events.
 
-![Spatial data mapping](img/excalidraw_illustrations/trawl-where.svg){width="80%" fig-alt="Diagram showing how spatial data maps to Darwin Core terms"}
+![Spatial data mapping (*Click to enlarge*)](img/excalidraw_illustrations/trawl-where.svg){width="80%" fig-alt="Diagram showing how spatial data maps to Darwin Core terms"}
 
 Like the When table, there is a fairly straightforward mapping of spatial coordinates to the Darwin Core standard. For many people, they can use decimal degrees taken directly from a GPS system. Others may need to convert from degrees-minutes-seconds to decimal degrees.
 
@@ -33,7 +33,7 @@ What do you do when you want to describe a transect, as is common in trawl data?
 
 Lastly, Darwin Core allows both minimum and maximum depth to be captured, although you may need to convert your data to meters.
 
-![Biological data mapping](img/excalidraw_illustrations/trawl-what.svg){width="80%" fig-alt="Diagram showing how biological data maps to Darwin Core terms"}
+![Biological data mapping (*Click to enlarge*)](img/excalidraw_illustrations/trawl-what.svg){width="80%" fig-alt="Diagram showing how biological data maps to Darwin Core terms"}
 
 Now we finally get to the biological part of our data. A trawl might return many species. Darwin Core allows these to be described via `scientificName` (any level of classification, not just species) and `scientificNameID` (corresponding to a database ID like a [WoRMS AphiaID](https://www.marinespecies.org/aphia.php) or [ITIS TSN](https://www.itis.gov/pdf/faq_itis_tsn.pdf)).
 
@@ -41,7 +41,7 @@ Now we finally get to the biological part of our data. A trawl might return many
 
 Lastly, each of these descriptions would be given an `eventID` or `occurrenceID` to identify this specific observation. This is like a primary key in a SQL database.
 
-![Extended Measurement or Fact data](img/excalidraw_illustrations/trawl-emof.svg){width="80%" fig-alt="Diagram showing how additional measurements are captured using the eMoF extension"}
+![Extended Measurement or Fact data (*Click to enlarge*)](img/excalidraw_illustrations/trawl-emof.svg){width="80%" fig-alt="Diagram showing how additional measurements are captured using the eMoF extension"}
 
 How does Darwin Core capture the information that might be specific to this study that might not be common across all of biology? It uses extensions, especially the [`Extended Measurement or Fact` extension](https://manual.obis.org/format_emof.html). In this way, any measurement or variable can be linked to any event or occurrence. Our example here shows temperature. Below we show a more unusual example from satellite telemetry.
 
@@ -51,11 +51,11 @@ Similarly, we break unit into a name and ID so computers can efficiently and cor
 
 ## Example: Satellite Telemetry Data
 
-![ATN data mapping overview](img/excalidraw_illustrations/atn_mapping.svg){width="80%" fig-alt="Overview diagram of how satellite telemetry data maps to Darwin Core"}
+![ATN data mapping overview (*Click to enlarge*)](img/excalidraw_illustrations/atn_mapping.svg){width="80%" fig-alt="Overview diagram of how satellite telemetry data maps to Darwin Core"}
 
 Here is another example: data from the Animal Telemetry Network (ATN), which deploys satellite tags on animals to track their movement.
 
-![Deployment event data](img/excalidraw_illustrations/atn-deployment.svg){width="80%" fig-alt="Diagram showing how deployment events are captured in Darwin Core"}
+![Deployment event data (*Click to enlarge*)](img/excalidraw_illustrations/atn-deployment.svg){width="80%" fig-alt="Diagram showing how deployment events are captured in Darwin Core"}
 
 We included this example to demonstrate how a parent event, like the entire deployment of a tag, can be described separately from children events and occurrences. Here, `eventDate` describes the full time range of all the satellite pings (individual occurrences) that happened during the deployment. `minimumDepthInMeters` and `maximumDepthInMeters` are appropriately recorded as 0m because all pings happen at the surface.
 
@@ -63,7 +63,7 @@ Since the deployment is not a single point, it is described as a MULTIPOINT usin
 
 Lastly, `samplingProtocol` is a generic description here, but it could just as easily reference a DOI from a published protocol or paper.
 
-![Individual occurrence data](img/excalidraw_illustrations/atn-occurrences.svg){width="80%" fig-alt="Diagram showing how individual satellite pings are captured as occurrences"}
+![Individual occurrence data (*Click to enlarge*)](img/excalidraw_illustrations/atn-occurrences.svg){width="80%" fig-alt="Diagram showing how individual satellite pings are captured as occurrences"}
 
 Here is an example of an occurrence, or individual ping from the tracked animal. Some noteworthy terms we haven't seen yet include `organismID` to identify a specific animal that is tracked for a long time.
 
@@ -73,12 +73,12 @@ Here is an example of an occurrence, or individual ping from the tracked animal.
 
 Finally, `occurrenceRemarks` gives us a place to note that this is a representative point from the full dataset, which can be found at NOAA's NCEI.
 
-![ATN eMoF extension data](img/excalidraw_illustrations/atn-emof.svg){width="80%" fig-alt="Diagram showing how telemetry-specific measurements are captured using eMoF"}
+![ATN eMoF extension data (*Click to enlarge*)](img/excalidraw_illustrations/atn-emof.svg){width="80%" fig-alt="Diagram showing how telemetry-specific measurements are captured using eMoF"}
 
 Let's look at how the Extended Measurement or Fact extension looks here, as a table. Whereas in the previous example we were looking at how a single variable is broken down, here we see how multiple variables are linked to a single occurrence. A new facet to these data is that they are referencing another standard, the [Movebank Attribute Dictionary](https://www.movebank.org/cms/movebank-content/movebank-attribute-dictionary). The telemetry and tracking community have already agreed to use these terms to describe specific attributes about variables like tag make and model, or tag placement. Rather than reinvent the wheel, we simply map to them so machines can be leveraged to coordinate these data with other data referencing Movebank attributes.
 
 ## There are many paths!
 
-![Multiple paths to success](img/excalidraw_illustrations/many_paths.svg){width="80%" fig-alt="Illustration showing multiple paths up a mountain, representing different approaches to data standardization"}
+![Multiple paths to success (*Click to enlarge*)](img/excalidraw_illustrations/many_paths.svg){width="80%" fig-alt="Illustration showing multiple paths up a mountain, representing different approaches to data standardization"}
 
 There are many paths to the top of the mountain. See the [resources page](resources.html) to view how others have shared their data with Darwin Core.

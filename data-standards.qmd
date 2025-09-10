@@ -13,7 +13,7 @@ Technical data standards pertain to organizing the data and documenting how data
 
 ::: {.grid .align-items-center}
 ::: {.g-col-4}
-![No standard scenario](img/excalidraw_illustrations/no_standard.svg){width="80%" fig-alt="A drawing of two people exchanging data without a standard" .lightbox}
+![No standard scenario (*Click to enlarge*)](img/excalidraw_illustrations/no_standard.svg){width="80%" fig-alt="A drawing of two people exchanging data without a standard" .lightbox}
 :::
 ::: {.g-col-8}
 
@@ -24,7 +24,7 @@ The data is not referenced to any standard and the only way to understand it is 
 
 ::: {.grid .align-items-center}
 ::: {.g-col-4}
-![Closed standard scenario](img/excalidraw_illustrations/closed_standard.svg){fig-alt="A drawing of a person giving data to a closed database" width="80%" .lightbox}
+![Closed standard scenario (*Click to enlarge*)](img/excalidraw_illustrations/closed_standard.svg){fig-alt="A drawing of a person giving data to a closed database" width="80%" .lightbox}
 :::
 ::: {.g-col-8}
 #### Closed standard
@@ -34,7 +34,7 @@ The data is referenced to a closed standard, one that is only accessible to a se
 
 ::: {.grid .align-items-center}
 ::: {.g-col-4}
-![Open standard scenario](img/excalidraw_illustrations/open_standard.svg){fig-alt="A drawing of data being exchanged across the world via an open standard" width="100%" .lightbox}
+![Open standard scenario (*Click to enlarge*)](img/excalidraw_illustrations/open_standard.svg){fig-alt="A drawing of data being exchanged across the world via an open standard" width="100%" .lightbox}
 :::
 ::: {.g-col-8}
 #### Open standard
@@ -49,8 +49,8 @@ In studying the US Atlantic ocean, implementing standards enable us to go from d
 - Using data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.
 - Data standards can save time and effort if used during data collection, but may be applied at other points in the data lifecycle by restructuring and re-documenting the data.
 
-![General data flow diagram](img/excalidraw_illustrations/general_data_flow.svg){fig-alt="Diagram showing the flow of data from collection through standards to synthesis"}
+![General data flow diagram (*Click to enlarge*)](img/excalidraw_illustrations/general_data_flow.svg){fig-alt="Diagram showing the flow of data from collection through standards to synthesis"}
 
 In short, it can save you time and effort. There are many standards out there that apply to many facets of our data as scientists. Integrating them into your workflows will increase your efficiency and increase the value of your data for people who reuse your data, including yourself.
 
-![Efficiency benefits of standards](img/excalidraw_illustrations/efficiency.svg){fig-alt="Diagram illustrating how standards improve efficiency in data workflows"}
+![Efficiency benefits of standards (*Click to enlarge*)](img/excalidraw_illustrations/efficiency.svg){fig-alt="Diagram illustrating how standards improve efficiency in data workflows"}
