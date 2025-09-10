@@ -10,7 +10,7 @@ This guide contains materials associated with an introductory workshop co-hosted
 
 1. [What data standards are and what they do](./data-standards.html)
 
-2. [Darwin Core structure](./dwc-basics.html) 
+2. [Darwin Core Basics](./dwc-basics.html) 
 
 3. [Using Darwin Core with your existing data](./align-your-data.html)
 

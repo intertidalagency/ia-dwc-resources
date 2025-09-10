@@ -144,7 +144,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#consider-incremental-and-strategic-incorporation-of-standards." id="toc-consider-incremental-and-strategic-incorporation-of-standards." class="nav-link active" data-scroll-target="#consider-incremental-and-strategic-incorporation-of-standards.">Consider incremental and strategic incorporation of standards.</a></li>
   <li><a href="#examples-of-aligning-to-darwin-core" id="toc-examples-of-aligning-to-darwin-core" class="nav-link" data-scroll-target="#examples-of-aligning-to-darwin-core">Examples of Aligning to Darwin Core</a>
   <ul>
-  <li><a href="#hypothetical-fisheries-trawl-data" id="toc-hypothetical-fisheries-trawl-data" class="nav-link" data-scroll-target="#hypothetical-fisheries-trawl-data">Hypothetical Fisheries Trawl Data</a></li>
+  <li><a href="#hypothetical-fisheries-trawl-data" id="toc-hypothetical-fisheries-trawl-data" class="nav-link" data-scroll-target="#hypothetical-fisheries-trawl-data">Hypothetical Fisheries Trawl Data</a>
+  <ul class="collapse">
+  <li><a href="#when" id="toc-when" class="nav-link" data-scroll-target="#when">When</a></li>
+  <li><a href="#where" id="toc-where" class="nav-link" data-scroll-target="#where">Where</a></li>
+  <li><a href="#what" id="toc-what" class="nav-link" data-scroll-target="#what">What</a></li>
+  <li><a href="#environmental-and-experimental-variables" id="toc-environmental-and-experimental-variables" class="nav-link" data-scroll-target="#environmental-and-experimental-variables">Environmental and Experimental Variables</a></li>
+  </ul></li>
   <li><a href="#example-satellite-telemetry-data" id="toc-example-satellite-telemetry-data" class="nav-link" data-scroll-target="#example-satellite-telemetry-data">Example Satellite Telemetry Data</a></li>
   </ul></li>
   <li><a href="#there-are-many-paths" id="toc-there-are-many-paths" class="nav-link" data-scroll-target="#there-are-many-paths">There are many paths!</a></li>
@@ -189,16 +195,43 @@ ul.task-list li input[type="checkbox"] {
 <section id="hypothetical-fisheries-trawl-data" class="level3">
 <h3 class="anchored" data-anchor-id="hypothetical-fisheries-trawl-data">Hypothetical Fisheries Trawl Data</h3>
 <p><a href="img/excalidraw_illustrations/trawl_mapping.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/excalidraw_illustrations/trawl_mapping.svg" class="img-fluid"></a></p>
+<p>Here we share data from a hypothetical fisheries trawl survey. In Darwin Core these data would be coordinated over a couple of tables to describe the core data (what, when, where) and the additional data, like experimental and environmental covariates that are specific to this data type and study. Here, we’ve broken these up into a few different tables to make them easier to view.</p>
+<section id="when" class="level4">
+<h4 class="anchored" data-anchor-id="when">When</h4>
+<p><a href="img/excalidraw_illustrations/trawl-when.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="img/excalidraw_illustrations/trawl-when.svg" class="img-fluid"></a></p>
+<p>Let’s start on the left, with ‘When’. This table demonstrate how variables names something like ‘Date’ and ‘Time’ map to the Darwin Core terms <code>eventDate</code> and <code>eventTime</code> fairly directly. With trawl data the might be captured as ‘Start’ and ‘Stop’ times, and that range can be captured within the <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601 format</a> that is used in Darwin Core.</p>
+<p>What may not be obvious is that Darwin Core events can be structured hierarchically, so individual time points, or ranges, can exists within parent events.</p>
+</section>
+<section id="where" class="level4">
+<h4 class="anchored" data-anchor-id="where">Where</h4>
+<p><a href="img/excalidraw_illustrations/trawl-where.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="img/excalidraw_illustrations/trawl-where.svg" class="img-fluid"></a></p>
+<p>Like the When table, there is a fairly straightforward mapping of spatial coordinates to the Darwin Core standard. For many people, they can use Decimal Degrees taken directly from a GPS system. Others may need to convert from Degrees Minutes Seconds to Decimal Degrees.</p>
+<p>What do you do when you want to describe a transect, as is common in trawl data? Darwin Core offers the term <code>footprintWKT</code>, which allows description of 2-D and 3-D shapes as ’<a href="https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry">Well Known Text (WKT)’</a>. This can include polygons, lines, circles, and other shapes.</p>
+<p>Lastly, Darwin Core allows both mininum and maximum depth to be captured, although you may need to convert your data to meters.</p>
+</section>
+<section id="what" class="level4">
+<h4 class="anchored" data-anchor-id="what">What</h4>
+<p><a href="img/excalidraw_illustrations/trawl-what.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="img/excalidraw_illustrations/trawl-what.svg" class="img-fluid"></a></p>
+<p>Now we finally get to the biological part of our data. A trawl might return many species. Darwin Core allows these to be described via <code>scientificName</code> (any level of classification, not just species) and <code>scientificNameID</code> (corresponding to a database ID like a <a href="https://www.marinespecies.org/aphia.php">WoRMS AphiaID</a> or <a href="https://www.itis.gov/pdf/faq_itis_tsn.pdf">ITIS TSN</a>).</p>
+<p><code>individualCount</code> can be described, or if you have a non-count units, <code>organismQuantity</code> and organismQuantityUnit` can be used to describe another unit that appropriately describes the catch in terms of Catch Per Unit Effort (CPUE).</p>
+<p>Lastly, each of these descriptions would be give and <code>eventID</code> or <code>occurrenceID</code> to identify this specific observation. This is like a primary key in a SQL database.</p>
+</section>
+<section id="environmental-and-experimental-variables" class="level4">
+<h4 class="anchored" data-anchor-id="environmental-and-experimental-variables">Environmental and Experimental Variables</h4>
+<p><img src="img/excalidraw_illustrations/trawl-emof.svg" class="img-fluid"> How does Darwin Core capture the information that might be specific to this study that might not be common accross all of biology? It uses extensions, especially the <a href="https://manual.obis.org/format_emof.html"><code>extended Measurement Or Fact</code> extension</a>. In this way, any measurement or variable can be linked to any event or occurrence. Our example here shows temperature. Below we show a more unsual example from satellite telemetry.</p>
+<p>This table reads differently than the others. In this case we have the Darwin Core terms in the left column and an example value in the right column. We name the variable in the <code>measurementType</code>, and use <code>measurementTypeID</code> to link it to a corresponding URL definition that can be read by a computer.</p>
+<p>Similarly, we break unit into a name and ID so computers can efficiently and correctly coordinate these data with other data. If we have information on properties like accuracy, methodology, and who recorded this information, we can record that as well.</p>
+</section>
 </section>
 <section id="example-satellite-telemetry-data" class="level3">
 <h3 class="anchored" data-anchor-id="example-satellite-telemetry-data">Example Satellite Telemetry Data</h3>
 <p>Walkthrough needed….</p>
-<p><a href="img/excalidraw_illustrations/atn_mapping.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="img/excalidraw_illustrations/atn_mapping.svg" class="img-fluid"></a></p>
+<p><a href="img/excalidraw_illustrations/atn_mapping.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="img/excalidraw_illustrations/atn_mapping.svg" class="img-fluid"></a></p>
 </section>
 </section>
 <section id="there-are-many-paths" class="level2">
 <h2 class="anchored" data-anchor-id="there-are-many-paths">There are many paths!</h2>
-<p><a href="img/excalidraw_illustrations/many_paths.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="img/excalidraw_illustrations/many_paths.svg" class="img-fluid"></a></p>
+<p><a href="img/excalidraw_illustrations/many_paths.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="img/excalidraw_illustrations/many_paths.svg" class="img-fluid"></a></p>
 <p>There are many paths to the top of the mountain. See the <a href="docs/resources.html">resources page</a> to view how others have shared their data with Darwin Core.</p>
 
 
