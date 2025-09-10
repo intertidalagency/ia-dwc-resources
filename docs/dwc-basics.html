@@ -188,30 +188,45 @@ ul.task-list li input[type="checkbox"] {
 <p>For communities like those which have developed around offshore development, this means the data you help collect can travel further and be reused more quickly. More practically, Darwin Core also saves time for anyone managing data, because it cuts down on the cleaning and translation work usually needed to merge different formats. In short, it helps your data stay connected, useful, and impactful well beyond the original project.</p>
 <section id="what-kind-of-things-fit-into-darwin-core" class="level3">
 <h3 class="anchored" data-anchor-id="what-kind-of-things-fit-into-darwin-core">What kind of things fit into Darwin Core?</h3>
-<p><a href="img/excalidraw_illustrations/data_types.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/excalidraw_illustrations/data_types.svg" class="img-fluid" style="width:80.0%"></a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/excalidraw_illustrations/data_types.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Data types that fit Darwin Core"><img src="img/excalidraw_illustrations/data_types.svg" class="img-fluid figure-img" style="width:80.0%" alt="Diagram showing various biological data types that can use Darwin Core"></a></p>
+<figcaption>Data types that fit Darwin Core</figcaption>
+</figure>
+</div>
 <p>Generally speaking, Darwin Core can accommodate observations of biological organisms. Here are some of the data types that have already used Darwin Core to publish to repositories like OBIS and GBIF.</p>
 </section>
 <section id="the-darwin-core-archive---a-unit-of-data-sharing" class="level3">
 <h3 class="anchored" data-anchor-id="the-darwin-core-archive---a-unit-of-data-sharing">The Darwin Core Archive - a unit of data sharing</h3>
-<p><a href="img/excalidraw_illustrations/DwC-A.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/excalidraw_illustrations/DwC-A.svg" class="img-fluid" style="width:80.0%"></a></p>
-<p>Before we get into the nitty gritty of Darwin Core, let’s talk about the Darwin Core Archive.</p>
-<p>The Darwin Core Archive is the practical, long-lasting “package” for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g.&nbsp;CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/excalidraw_illustrations/DwC-A.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Darwin Core Archive structure"><img src="img/excalidraw_illustrations/DwC-A.svg" class="img-fluid figure-img" style="width:80.0%" alt="Diagram showing the components of a Darwin Core Archive"></a></p>
+<figcaption>Darwin Core Archive structure</figcaption>
+</figure>
+</div>
+<p>Before we get into the nitty-gritty of Darwin Core, let’s talk about the Darwin Core Archive.</p>
+<p>The Darwin Core Archive is the practical, long-lasting “package” for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g., CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.</p>
 </section>
 <section id="what-about-things-that-dont-fit-into-darwin-core" class="level3">
 <h3 class="anchored" data-anchor-id="what-about-things-that-dont-fit-into-darwin-core">What about things that don’t fit into Darwin Core?</h3>
-<p>Invariably, scientists measure variables that are unique to their data. So how do we share these in a standardized way? The folks at OBIS came up with a nice extension to Darwin Core that does just that, it’s called the <code>Extended measurement or fact (eMoF)</code> extension.</p>
-<p>As you’ll see on the <a href="align-your-data.html#example-satellite-telemetry-data">example from the Animal Telemetry Network (ATN)</a>, sometimes communities have strong standards in place, like the <a href="https://www.movebank.org/cms/movebank-content/movebank-attribute-dictionary">Movebank attribute dictionary</a>, which prescribes standard definitions for variables related to telemetry. The eMoF extension allows for these to be put into a generalized, standard structure so that they can interoperate, and be reused with standards from other communities, like the <a href="https://vocab.nerc.ac.uk/collection/P07/current/">Climate and Forecast (CF) Standard Names</a></p>
+<p>Invariably, scientists measure variables that are unique to their data. So how do we share these in a standardized way? The folks at OBIS came up with a nice extension to Darwin Core that does just that—it’s called the <code>Extended Measurement or Fact (eMoF)</code> extension.</p>
+<p>As you’ll see in the <a href="align-your-data.html#example-satellite-telemetry-data">example from the Animal Telemetry Network (ATN)</a>, sometimes communities have strong standards in place, like the <a href="https://www.movebank.org/cms/movebank-content/movebank-attribute-dictionary">Movebank Attribute Dictionary</a>, which prescribes standard definitions for variables related to telemetry. The eMoF extension allows for these to be put into a generalized, standard structure so that they can interoperate and be reused with standards from other communities, like the <a href="https://vocab.nerc.ac.uk/collection/P07/current/">Climate and Forecast (CF) Standard Names</a>.</p>
 </section>
 </section>
 <section id="darwin-core-basics" class="level2">
 <h2 class="anchored" data-anchor-id="darwin-core-basics">Darwin Core Basics</h2>
-<p>Ok, we’re ready for some nitty gritty. Darwin Core is essentially a list of terms you can use as column headers in your data. Of course, these terms can also be used in more sophisticated structures than spreadsheets, like relational databases, but let’s keep it simple for now.</p>
+<p>OK, we’re ready for some nitty-gritty. Darwin Core is essentially a list of terms you can use as column headers in your data. Of course, these terms can also be used in more sophisticated structures than spreadsheets, like relational databases, but let’s keep it simple for now.</p>
 <p>An example of this is describing the date some data was collected. If we don’t use Darwin Core, you might call it <code>date</code> and I might call it <code>collection day</code>. If we agree to use Darwin Core, we know it will be <code>eventDate</code> and we will never have to discuss it.</p>
-<p><a href="img/excalidraw_illustrations/single_DwC_term.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="img/excalidraw_illustrations/single_DwC_term.svg" class="img-fluid" style="width:80.0%"></a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/excalidraw_illustrations/single_DwC_term.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Single Darwin Core term example"><img src="img/excalidraw_illustrations/single_DwC_term.svg" class="img-fluid figure-img" style="width:80.0%" alt="Diagram showing how a single Darwin Core term standardizes data description"></a></p>
+<figcaption>Single Darwin Core term example</figcaption>
+</figure>
+</div>
 <section id="example-term" class="level3">
 <h3 class="anchored" data-anchor-id="example-term">Example Term</h3>
-<p>For example,In Darwin Core, <code>countryCode</code> is a standard term that describes that a particular observation happened in a country. You describe them via two-letter country codes (like <code>US</code> for the United States or <code>CA</code> for Canada).</p>
-<p>Although there are many good arguments for using standards early in your data workflow, you don’t have create an entirely new workflow; you can map to <code>countryCode</code>, and other Darwin Core terms, anywhere in your data process. That way, whether you’re collecting records in the field, managing them in a database, or publishing them online, the meaning stays consistent and others will immediately understand what that field represents.</p>
+<p>For example, in Darwin Core, <code>countryCode</code> is a standard term that describes that a particular observation happened in a country. You describe them via two-letter country codes (like <code>US</code> for the United States or <code>CA</code> for Canada).</p>
+<p>Although there are many good arguments for using standards early in your data workflow, you don’t have to create an entirely new workflow; you can map to <code>countryCode</code>, and other Darwin Core terms, anywhere in your data process. That way, whether you’re collecting records in the field, managing them in a database, or publishing them online, the meaning stays consistent and others will immediately understand what that field represents.</p>
 </section>
 <section id="what-is-required" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-required">What is required?</h3>
@@ -223,11 +238,11 @@ ul.task-list li input[type="checkbox"] {
 <li><code>decimalLatitude</code></li>
 <li><code>decimalLongitude</code></li>
 <li><code>occurrenceID</code></li>
-<li><code>occurrenceStatus</code> (e.g.&nbsp;present/absent)</li>
-<li><code>basisOfRecord</code> (e.g.&nbsp;HumanObservation)</li>
+<li><code>occurrenceStatus</code> (e.g., present/absent)</li>
+<li><code>basisOfRecord</code> (e.g., HumanObservation)</li>
 <li><code>scientificName</code></li>
 </ul>
-<p>When you look at those requirements, they’re rather simple: What did you see (<code>scientificName</code>), when (<code>eventDate</code>) and where (<code>decimalLatitude/decimalLongtitude</code>) did you see it, how did you see it (<code>basisOfRecord</code>), and how do we reference this record (<code>eventID</code> and <code>occurrenceID</code>).</p>
+<p>When you look at those requirements, they’re rather simple: What did you see (<code>scientificName</code>), when (<code>eventDate</code>) and where (<code>decimalLatitude</code>/<code>decimalLongitude</code>) did you see it, how did you see it (<code>basisOfRecord</code>), and how do we reference this record (<code>eventID</code> and <code>occurrenceID</code>).</p>
 <p>But if that’s all the information Darwin Core communicated, it wouldn’t be very useful. On the next page we look at some specific examples. It comes down to what your scientific community expects of you. For example, it might be normal to collect the <code>sex</code> of the species in your field. In that case, it’s best to include <code>sex</code> as a term.</p>
 
 

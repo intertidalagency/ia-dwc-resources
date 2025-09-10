@@ -3,29 +3,24 @@ title: "Standardizing Data with Darwin Core"
 format: html
 ---
 
-This guide contains materials associated with an introductory workshop co-hosted by [ROSA](https://www.rosascience.org/) and [RWSC](https://rwsc.org/) on aligning data to the Darwin Core data standard.  [Darwin Core](https://dwc.tdwg.org/) is used to publish biological data to public repositories, like [OBIS](https://obis.org/) and [GBIF](https://www.gbif.org/), making it easier to find and reuse. This type of data publication is often a requirement from funders and managing agencies, and can add value and increase the impact of your data. We hope these materials provide you a better understanding of how data standards work and how Darwin Core can help get your data published.
-
+This guide contains materials associated with an introductory workshop co-hosted by [ROSA](https://www.rosascience.org/) and [RWSC](https://rwsc.org/) on aligning data to the Darwin Core data standard. [Darwin Core](https://dwc.tdwg.org/) is used to publish biological data to public repositories, like [OBIS](https://obis.org/) and [GBIF](https://www.gbif.org/), making it easier to find and reuse. This type of data publication is often a requirement from funders and managing agencies, and can add value and increase the impact of your data. We hope these materials provide you a better understanding of how data standards work and how Darwin Core can help get your data published.
 
 ### Topics covered include
 
-1. [What data standards are and what they do](./data-standards.html)
+1. [What data standards are and what they do](data-standards.html)
 
-2. [Darwin Core Basics](./dwc-basics.html) 
+2. [Darwin Core Basics](dwc-basics.html)
 
-3. [Using Darwin Core with your existing data](./align-your-data.html)
-
- 
+3. [Using Darwin Core with your existing data](align-your-data.html)
 
 --------
 
 ::: {.image-text-container}
 ::: {.image-section}
-![](img/peep-standing-17.svg){.contact-image}
+![Contact illustration](img/peep-standing-17.svg){.contact-image fig-alt="A drawing of a woman with a question"}
 :::
 
 ::: {.text-section}
 If you're part of the ROSA and RWSC communities, we're helping map and publish data this fall. Contact us at <span class="email-contact"><span data-name="kate" data-domain="intertidal" data-tld="agency"></span></span> to join the pilot program!
 :::
 :::
-
-
