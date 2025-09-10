@@ -26,7 +26,7 @@ book:
     - align-your-data.qmd
     - resources.qmd
   page-navigation: false
-  favicon: /img/Intertidal-ProfilePic-Aqua-Bold.png
+  favicon: img/Intertidal-ProfilePic-Aqua-Bold.png
   navbar: 
     title: false
     background: "#034969"
@@ -43,7 +43,7 @@ book:
     border: false
  
   page-footer: 
-    left: <img src="/img/Intertidal_PrimaryLogo_Bold_White.png" width="105">
+    left: <img src="img/Intertidal_PrimaryLogo_Bold_White.png" width="105">
     center: "Content licensed CC-BY 4.0, Intertidal Agency"
     right: 
       - icon: linkedin

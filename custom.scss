@@ -20,7 +20,7 @@ $black:   #000000 ;
 
 @font-face {
   font-family: "Signifier";
-  src: url("/assets/fonts/Signifier-Regular.otf") format("opentype");
+  src: url("assets/fonts/Signifier-Regular.otf") format("opentype");
   /* Prefer WOFF2 if you can: format("woff2") */
   font-weight: 400;
   font-style: normal;
