@@ -21,25 +21,19 @@ What does it look like to map existing data to Darwin Core? Here we share a hypo
 
 Here we share data from a hypothetical fisheries trawl survey. In Darwin Core these data would be coordinated over a couple of tables to describe the core data (what, when, where) and the additional data, like experimental and environmental covariates that are specific to this data type and study. Here, we've broken these up into a few different tables to make them easier to view.
 
-#### When
-
 ![](img/excalidraw_illustrations/trawl-when.svg)
 
 Let's start on the left, with 'When'. This table demonstrate how variables names something like 'Date' and 'Time' map to the Darwin Core terms `eventDate` and `eventTime` fairly directly. With trawl data the might be captured as 'Start' and 'Stop' times, and that range can be captured within the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601) that is used in Darwin Core. 
 
 What may not be obvious is that Darwin Core events can be structured hierarchically, so individual time points, or ranges, can exists within parent events.
 
-#### Where
-
 ![](img/excalidraw_illustrations/trawl-where.svg)
 
 Like the When table, there is a fairly straightforward mapping of spatial coordinates to the Darwin Core standard. For many people, they can use Decimal Degrees taken directly from a GPS system. Others may need to convert from Degrees Minutes Seconds to Decimal Degrees.
 
-What do you do when you want to describe a transect, as is common in trawl data?  Darwin Core offers the term `footprintWKT`, which allows description of 2-D and 3-D shapes as '[Well Known Text (WKT)'](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry). This can include polygons, lines, circles, and other shapes.
+What do you do when you want to describe a transect, as is common in trawl data?  Darwin Core offers the term `footprintWKT`, which allows description of 2-D and 3-D shapes as [Well Known Text (WKT)](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry). This can include polygons, lines, circles, and other shapes.
 
 Lastly, Darwin Core allows both mininum and maximum depth to be captured, although you may need to convert your data to meters.
-
-#### What
 
 ![](img/excalidraw_illustrations/trawl-what.svg)
 
@@ -49,10 +43,8 @@ Now we finally get to the biological part of our data. A trawl might return many
 
 Lastly, each of these descriptions would be give and `eventID` or `occurrenceID` to identify this specific observation. This is like a primary key in a SQL database.
 
-#### Environmental and Experimental Variables
-
 ![](img/excalidraw_illustrations/trawl-emof.svg)
-How does Darwin Core capture the information that might be specific to this study that might not be common accross all of biology?  It uses extensions, especially the [`extended Measurement Or Fact` extension](https://manual.obis.org/format_emof.html). In this way, any measurement or variable can be linked to any event or occurrence.  Our example here shows temperature. Below we show a more unsual example from satellite telemetry.
+How does Darwin Core capture the information that might be specific to this study that might not be common across all of biology?  It uses extensions, especially the [`extended Measurement Or Fact` extension](https://manual.obis.org/format_emof.html). In this way, any measurement or variable can be linked to any event or occurrence.  Our example here shows temperature. Below we show a more unsual example from satellite telemetry.
 
 This table reads differently than the others. In this case we have the Darwin Core terms in the left column and an example value in the right column.  We name the variable in the `measurementType`, and use `measurementTypeID` to link it to a corresponding URL definition that can be read by a computer.
 
@@ -60,7 +52,7 @@ Similarly, we break unit into a name and ID so computers can efficiently and cor
 
 ### Example Satellite Telemetry Data
 
-Walkthrough needed....
+Here is another example of some data from the Animal Telemetry Network (ATN), which deploys satellite tags on animals to track their movement.
 
 ![](img/excalidraw_illustrations/atn_mapping.svg)  
 
