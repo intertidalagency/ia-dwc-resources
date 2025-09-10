@@ -1,122 +1,93 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Standardizing Data with Darwin Core",
-    "section": "",
-    "text": "This guide contains materials associated with an introductory workshop on aligning data to the Darwin Core data standard.\n\nWorkshop topics\n\nWhat data standards are and what they do\nDarwin Core structure\nUsing Darwin Core with your existing data\n\n\n\n\n\n\nIf you’re part of the ROSA and RWSC communities, we’re helping map and publish data this fall. Contact us (kate@intertidal.agency) to join the pilot program!",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Standardizing Data with Darwin Core</span>"
-    ]
-  },
-  {
-    "objectID": "data-standards.html",
-    "href": "data-standards.html",
-    "title": "What data standards are and what they do",
-    "section": "",
-    "text": "What is a data standard?\nA technical specification that details the structure, organization, documentation, and format of data.\nTechnical data standards pertain to organizing the data and documenting how data was collected; they do not provide guidelines for how data should be collected. They are usually machine-testable, and enable machines to exchange data.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What data standards are and what they do</span>"
-    ]
-  },
-  {
-    "objectID": "data-standards.html#what-is-a-data-standard",
-    "href": "data-standards.html#what-is-a-data-standard",
-    "title": "What data standards are and what they do",
-    "section": "",
-    "text": "Some common scenarios\n\n\n\n\n\nNo standard\nThe data is not referenced to any standard and the only way to understand it is to talk to the people who created it, or extract context from related work, like published papers. Relies on human intuition, institutional knowledge and irregular documentation.\n\n\n\n\n\n\n\nClosed standard\nThe data is not referenced to closed standard, one that is only accessible to a select group of people (e.g. a private company). Relies on closed documentation and institutional knowledge. This is different from FAIR data that has restricted access.\n\n\n\n\n\n\n\nOpen standard\nHumans and machines never have to interact to be able to reuse each other’s data. Relies on FAIR, open data standard. Standard is well documented and machine readable. Some of the best arguments for using open standards include, increasing collective efficiency to make bigger and better products and to get and track credit for your work.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What data standards are and what they do</span>"
-    ]
-  },
-  {
-    "objectID": "data-standards.html#why-use-a-data-standard",
-    "href": "data-standards.html#why-use-a-data-standard",
-    "title": "What data standards are and what they do",
-    "section": "Why use a data standard?",
-    "text": "Why use a data standard?\nIn studying the US Atlantic ocean, implementing standards enable us to go from data to regional syntheses efficiently.\n\nUsing data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.\nData standards can save time and effort if used during data collection, but may be applied at other points in the data life cycle by restructuring and re-documenting the data.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What data standards are and what they do</span>"
-    ]
-  },
-  {
-    "objectID": "data-standards.html#why-use-standards",
-    "href": "data-standards.html#why-use-standards",
-    "title": "What data standards are and what they do",
-    "section": "Why use standards?",
-    "text": "Why use standards?\nIn short, it can save you time and effort. There are many standards out there that apply to many facets of our data as scientists. Integration them into your workflows will increase your efficiency and increase the value of your data for people who reuse your data, inlcuding yourself.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What data standards are and what they do</span>"
-    ]
-  },
-  {
     "objectID": "dwc-basics.html",
     "href": "dwc-basics.html",
     "title": "Darwin Core structure",
     "section": "",
-    "text": "Why Darwin Core?\nThere is an existing standard, Darwin Core, that works well for sharing many types of biological data, especially those that are related to ecology. It’s been around for about 25 years and at least 3.5 billion data records are shared via Darwin Core to repositories like the Ocean Biodiversity Information System (OBIS).\nFor communities like those which have developed around offshore development, this means the data you help collect can travel further and be reused more quickly. More practically, Darwin Core also saves time for anyone managing data, because it cuts down on the cleaning and translation work usually needed to merge different formats. In short, it helps your data stay connected, useful, and impactful well beyond the original project.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core structure</span>"
-    ]
+    "text": "There is an existing standard, Darwin Core, that works well for sharing many types of biological data, especially those that are related to ecology. It’s been around for about 25 years and at least 3.5 billion data records are shared via Darwin Core to repositories like the Ocean Biodiversity Information System (OBIS).\nFor communities like those which have developed around offshore development, this means the data you help collect can travel further and be reused more quickly. More practically, Darwin Core also saves time for anyone managing data, because it cuts down on the cleaning and translation work usually needed to merge different formats. In short, it helps your data stay connected, useful, and impactful well beyond the original project."
+  },
+  {
+    "objectID": "dwc-basics.html#why-darwin-core",
+    "href": "dwc-basics.html#why-darwin-core",
+    "title": "Darwin Core structure",
+    "section": "",
+    "text": "There is an existing standard, Darwin Core, that works well for sharing many types of biological data, especially those that are related to ecology. It’s been around for about 25 years and at least 3.5 billion data records are shared via Darwin Core to repositories like the Ocean Biodiversity Information System (OBIS).\nFor communities like those which have developed around offshore development, this means the data you help collect can travel further and be reused more quickly. More practically, Darwin Core also saves time for anyone managing data, because it cuts down on the cleaning and translation work usually needed to merge different formats. In short, it helps your data stay connected, useful, and impactful well beyond the original project."
   },
   {
     "objectID": "dwc-basics.html#darwin-core-basics",
     "href": "dwc-basics.html#darwin-core-basics",
     "title": "Darwin Core structure",
     "section": "Darwin Core Basics",
-    "text": "Darwin Core Basics\n\n\nTerms you can use\nDarwin Core is essentially a list of terms you can use as column headers in your data. Of course, these can also be used in more sophisticated structures than spreadsheets, but let’s keep it simple for now.\nFor example,In Darwin Core, countryCode is a standard term that describes that a particular observation happened in a country. You describe them via two-letter country codes (like US for the United States or CA for Canada).\nAlthough there are many good arguments for using standards early in your data workflow, you don’t have create an entirely new workflow; you can map to countryCode, and other Darwin Core terms, anywhere in your data process. That way, whether you’re collecting records in the field, managing them in a database, or publishing them online, the meaning stays consistent and others will immediately understand what that field represents.\n\n\nWhat is required?\nOne of the most frequent questions we get is which terms are required in Darwin Core? The answer is none. The standard does not presribe requirements, however repositories like OBIS and GBIF do.\nFor example, OBIS requires:\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\noccurrenceID\noccurrenceStatus (e.g. present/absent)\nbasisOfRecord (e.g. HumanObservation)\nscientificName\n\nWhen you look at those requirements, they’re rather simple: What did you see (scientificName), when (eventDate) and where (decimalLatitude/decimalLongtitude) did you see it, how did you see it (basisOfRecord), and how do we reference this record (eventID and occurrenceID).\nBut if that’s all the information Darwin Core communicated, it wouldn’t be very useful. On the next page we look at some specific examples. It comes down to what your scientific community expects of you. For example, it might be normal to collect the sex of the species in your field. In that case, it’s best to include sex as a term.\n\n\nThe Darwin Core Archive\n\nThe Darwin Core Archive is the practical, long-lasting “package” for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g. CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.\n\n\nWhat about things that don’t fit into Darwin Core?\nInvariably, scientists measure variables that are unique to their data. So how do we share these in a standardized way? The folks at OBIS came up with a nice extension to Darwin Core that does just that, it’s called the Extended measurement or fact (eMoF) extension.\nAs you’ll seen on the example from the Animal Telemetry Network (ATN), sometimes communities have strong standards in place, like the Movebank attribute dictionary, which prescribes standard definitions for variables related to telemetry. The eMoF extension allows for these to be put into a generalized, standard structure so that they can interoperate, and be reused with standards from other communities, like the Climate and Forecast (CF) Standard Names\n\n\nWhat kind of things do fit?\nIn fact, here are some of the data types that have already used Darwin Core to publish to repositories like OBIS and GBIF.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Darwin Core structure</span>"
-    ]
+    "text": "Darwin Core Basics\n\n\nTerms you can use\nDarwin Core is essentially a list of terms you can use as column headers in your data. Of course, these can also be used in more sophisticated structures than spreadsheets, but let’s keep it simple for now.\nFor example,In Darwin Core, countryCode is a standard term that describes that a particular observation happened in a country. You describe them via two-letter country codes (like US for the United States or CA for Canada).\nAlthough there are many good arguments for using standards early in your data workflow, you don’t have create an entirely new workflow; you can map to countryCode, and other Darwin Core terms, anywhere in your data process. That way, whether you’re collecting records in the field, managing them in a database, or publishing them online, the meaning stays consistent and others will immediately understand what that field represents.\n\n\nWhat is required?\nOne of the most frequent questions we get is which terms are required in Darwin Core? The answer is none. The standard does not presribe requirements, however repositories like OBIS and GBIF do.\nFor example, OBIS requires:\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\noccurrenceID\noccurrenceStatus (e.g. present/absent)\nbasisOfRecord (e.g. HumanObservation)\nscientificName\n\nWhen you look at those requirements, they’re rather simple: What did you see (scientificName), when (eventDate) and where (decimalLatitude/decimalLongtitude) did you see it, how did you see it (basisOfRecord), and how do we reference this record (eventID and occurrenceID).\nBut if that’s all the information Darwin Core communicated, it wouldn’t be very useful. On the next page we look at some specific examples. It comes down to what your scientific community expects of you. For example, it might be normal to collect the sex of the species in your field. In that case, it’s best to include sex as a term.\n\n\nThe Darwin Core Archive\n\nThe Darwin Core Archive is the practical, long-lasting “package” for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g. CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story—who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.\n\n\nWhat about things that don’t fit into Darwin Core?\nInvariably, scientists measure variables that are unique to their data. So how do we share these in a standardized way? The folks at OBIS came up with a nice extension to Darwin Core that does just that, it’s called the Extended measurement or fact (eMoF) extension.\nAs you’ll seen on the example from the Animal Telemetry Network (ATN), sometimes communities have strong standards in place, like the Movebank attribute dictionary, which prescribes standard definitions for variables related to telemetry. The eMoF extension allows for these to be put into a generalized, standard structure so that they can interoperate, and be reused with standards from other communities, like the Climate and Forecast (CF) Standard Names\n\n\nWhat kind of things do fit?\nIn fact, here are some of the data types that have already used Darwin Core to publish to repositories like OBIS and GBIF."
   },
   {
-    "objectID": "align-your-data.html",
-    "href": "align-your-data.html",
-    "title": "Using Darwin Core with your existing data",
+    "objectID": "data-standards.html",
+    "href": "data-standards.html",
+    "title": "What data standards are and what they do",
     "section": "",
-    "text": "Consider incremental and strategic incorporation of standards.\nThere are many paths to the top of the mountain. See the resources page to view how others have shared their data with Darwin Core.\nIt can pay to keep local structures aligned with standards that are useful downstream of collection.\nBut, you may already have systems in place for collecting and working with your data. Consider improving them by selectively working toward a standards-based system. Already standards based? Consider mapping to Darwin Core and publishing a Darwin Core Archive so that the data can be found and reused by the biodiversity science community.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Using Darwin Core with your existing data</span>"
-    ]
+    "text": "A technical specification that details the structure, organization, documentation, and format of data.\nTechnical data standards pertain to organizing the data and documenting how data was collected; they do not provide guidelines for how data should be collected. They are usually machine-testable, and enable machines to exchange data.\n\n\n\n\n\n\n\n\nThe data is not referenced to any standard and the only way to understand it is to talk to the people who created it, or extract context from related work, like published papers. Relies on human intuition, institutional knowledge and irregular documentation.\n\n\n\n\n\n\n\n\nThe data is not referenced to closed standard, one that is only accessible to a select group of people (e.g. a private company). Relies on closed documentation and institutional knowledge. This is different from FAIR data that has restricted access.\n\n\n\n\n\n\n\n\nHumans and machines never have to interact to be able to reuse each other’s data. Relies on FAIR, open data standard. Standard is well documented and machine readable. Some of the best arguments for using open standards include, increasing collective efficiency to make bigger and better products and to get and track credit for your work."
   },
   {
-    "objectID": "align-your-data.html#steps-to-alignment",
-    "href": "align-your-data.html#steps-to-alignment",
-    "title": "Using Darwin Core with your existing data",
-    "section": "Steps to alignment",
-    "text": "Steps to alignment\nWhat does it look like to map existing data to Darwin Core? Here we share a hypothetical example of a fisheries trawl, and and another of satellite telemetry data from the ATN.\n\nHypothetical Fisheries Trawl Data\nWalkthrough needed….\n\n\n\nExample Satellite Telemetry Data\nWalkthrough needed….",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Using Darwin Core with your existing data</span>"
-    ]
+    "objectID": "data-standards.html#what-is-a-data-standard",
+    "href": "data-standards.html#what-is-a-data-standard",
+    "title": "What data standards are and what they do",
+    "section": "",
+    "text": "A technical specification that details the structure, organization, documentation, and format of data.\nTechnical data standards pertain to organizing the data and documenting how data was collected; they do not provide guidelines for how data should be collected. They are usually machine-testable, and enable machines to exchange data.\n\n\n\n\n\n\n\n\nThe data is not referenced to any standard and the only way to understand it is to talk to the people who created it, or extract context from related work, like published papers. Relies on human intuition, institutional knowledge and irregular documentation.\n\n\n\n\n\n\n\n\nThe data is not referenced to closed standard, one that is only accessible to a select group of people (e.g. a private company). Relies on closed documentation and institutional knowledge. This is different from FAIR data that has restricted access.\n\n\n\n\n\n\n\n\nHumans and machines never have to interact to be able to reuse each other’s data. Relies on FAIR, open data standard. Standard is well documented and machine readable. Some of the best arguments for using open standards include, increasing collective efficiency to make bigger and better products and to get and track credit for your work."
+  },
+  {
+    "objectID": "data-standards.html#why-use-a-data-standard",
+    "href": "data-standards.html#why-use-a-data-standard",
+    "title": "What data standards are and what they do",
+    "section": "Why use a data standard?",
+    "text": "Why use a data standard?\nIn studying the US Atlantic ocean, implementing standards enable us to go from data to regional syntheses efficiently.\n\nUsing data standards allows for the consistent collection of data, and aids in data aggregation, sharing and reuse, and interoperability of that data across different systems, sources, and users.\nData standards can save time and effort if used during data collection, but may be applied at other points in the data life cycle by restructuring and re-documenting the data."
+  },
+  {
+    "objectID": "data-standards.html#why-use-standards",
+    "href": "data-standards.html#why-use-standards",
+    "title": "What data standards are and what they do",
+    "section": "Why use standards?",
+    "text": "Why use standards?\nIn short, it can save you time and effort. There are many standards out there that apply to many facets of our data as scientists. Integration them into your workflows will increase your efficiency and increase the value of your data for people who reuse your data, inlcuding yourself."
   },
   {
     "objectID": "resources.html",
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Guides and How-Tos",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Resources</span>"
-    ]
+    "text": "OBIS Manual https://manual.obis.org/\nDarwin Core Quick Reference Guide: find specific terms"
   },
   {
     "objectID": "resources.html#guides-and-how-tos",
     "href": "resources.html#guides-and-how-tos",
     "title": "Resources",
     "section": "",
-    "text": "OBIS Manual https://manual.obis.org/\nDarwin Core Quick Reference Guide: find specific terms",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Resources</span>"
-    ]
+    "text": "OBIS Manual https://manual.obis.org/\nDarwin Core Quick Reference Guide: find specific terms"
   },
   {
     "objectID": "resources.html#example-published-datasets",
     "href": "resources.html#example-published-datasets",
     "title": "Resources",
     "section": "Example Published Datasets",
-    "text": "Example Published Datasets\n\neDNA\nSilliman K, Anderson S, Thompson L (2024). eDNA from Gulf of Mexico Ecosystems and Carbon Cruise 2021 (GOMECC-4). Version 1.7. United States Geological Survey. Occurrence dataset. https://obis.org/dataset/210efc7c-4762-47ee-b4b5-22a0f436ef44\n\n\nLarge Coral Database with Images\nNational Oceanic and Atmospheric Administration (NOAA), Deep Sea Coral Research and Technology Program (DSCRTP) 2025. Observations of Deep-Sea Coral and Sponge Occurrences from NOAA’s National Database for Deep-sea Corals and Sponges, 1842-Present, version 20250714-0 (NCEI Accession 0145037). NOAA National Centers for Environmental Information. https://obis.org/dataset/f5a4799e-dc24-4807-89d9-01da47d52e3b\n\n\nFish Trawl\nRebecca Peters. Maine Department of Marine Resources Inshore Trawl Survey, 2000 – 2019. 2022. Maine Department of Marine Resources, PO Box 8, West Boothbay Harbor, Maine 04575 https://obis.org/dataset/d4091591-a085-4cfa-9734-5f0ecf5564a8\n\n\nZooplankton Monitoring\nKeister J E, Winans A, Herrmann B, Kalata O, Mayorga E (2024). Puget Sound Zooplankton Monitoring Program (Salish Sea, USA), starting in 2014. Version 1.1. United States Geological Survey. Samplingevent dataset. https://obis.org/dataset/debc8f44-f70f-4d30-821e-d3a705f62cfb\n\n\nPassive Acoustic Monitoring (PAM)\nNOAA Office of National Marine Sanctuaries and U.S Navy (2023). Sanctuary Soundscape Monitoring Project (SanctSound) Daily Aggregated Species Detections. Version 1.1. Occurrence dataset. https://obis.org/dataset/7a4427f6-67ee-4cc1-b95f-3045523420a1\n\n\nSeabird Colony Observations\nMoore E, McDonald T, Schaefer A, Kaler R, Oehlers S, Renner H, Corcoran R, Boldenow M, Goldstein M, Lyons D, Renner M, Cooper E (2024). Statewide Alaska Tern Occurrences. Version 1.1. USFWS-AK. Occurrence dataset. https://ipt-obis.gbif.us/resource?r=usfws_alaska_tern_colonies&v=1.1\n\n\nBenthic Fauna with Sediment Isotope Data\nDemopoulos A, Prouty N, McClain Counts J, Richards K (2024). Isotope data from Shimada 2018 research expedition. Version 1.9. United States Geological Survey. Occurrence dataset.&lt; https://obis.org/dataset/c9171650-c1fe-4b17-ab64-32b883fd738d&gt;",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Resources</span>"
-    ]
+    "text": "Example Published Datasets\n\neDNA\nSilliman K, Anderson S, Thompson L (2024). eDNA from Gulf of Mexico Ecosystems and Carbon Cruise 2021 (GOMECC-4). Version 1.7. United States Geological Survey. Occurrence dataset. https://obis.org/dataset/210efc7c-4762-47ee-b4b5-22a0f436ef44\n\n\nLarge Coral Database with Images\nNational Oceanic and Atmospheric Administration (NOAA), Deep Sea Coral Research and Technology Program (DSCRTP) 2025. Observations of Deep-Sea Coral and Sponge Occurrences from NOAA’s National Database for Deep-sea Corals and Sponges, 1842-Present, version 20250714-0 (NCEI Accession 0145037). NOAA National Centers for Environmental Information. https://obis.org/dataset/f5a4799e-dc24-4807-89d9-01da47d52e3b\n\n\nFish Trawl\nRebecca Peters. Maine Department of Marine Resources Inshore Trawl Survey, 2000 – 2019. 2022. Maine Department of Marine Resources, PO Box 8, West Boothbay Harbor, Maine 04575 https://obis.org/dataset/d4091591-a085-4cfa-9734-5f0ecf5564a8\n\n\nZooplankton Monitoring\nKeister J E, Winans A, Herrmann B, Kalata O, Mayorga E (2024). Puget Sound Zooplankton Monitoring Program (Salish Sea, USA), starting in 2014. Version 1.1. United States Geological Survey. Samplingevent dataset. https://obis.org/dataset/debc8f44-f70f-4d30-821e-d3a705f62cfb\n\n\nPassive Acoustic Monitoring (PAM)\nNOAA Office of National Marine Sanctuaries and U.S Navy (2023). Sanctuary Soundscape Monitoring Project (SanctSound) Daily Aggregated Species Detections. Version 1.1. Occurrence dataset. https://obis.org/dataset/7a4427f6-67ee-4cc1-b95f-3045523420a1\n\n\nSeabird Colony Observations\nMoore E, McDonald T, Schaefer A, Kaler R, Oehlers S, Renner H, Corcoran R, Boldenow M, Goldstein M, Lyons D, Renner M, Cooper E (2024). Statewide Alaska Tern Occurrences. Version 1.1. USFWS-AK. Occurrence dataset. https://ipt-obis.gbif.us/resource?r=usfws_alaska_tern_colonies&v=1.1\n\n\nBenthic Fauna with Sediment Isotope Data\nDemopoulos A, Prouty N, McClain Counts J, Richards K (2024). Isotope data from Shimada 2018 research expedition. Version 1.9. United States Geological Survey. Occurrence dataset.&lt; https://obis.org/dataset/c9171650-c1fe-4b17-ab64-32b883fd738d&gt;"
+  },
+  {
+    "objectID": "align-your-data.html",
+    "href": "align-your-data.html",
+    "title": "Using Darwin Core with your existing data",
+    "section": "",
+    "text": "There are many paths to the top of the mountain. See the resources page to view how others have shared their data with Darwin Core."
+  },
+  {
+    "objectID": "align-your-data.html#steps-to-alignment",
+    "href": "align-your-data.html#steps-to-alignment",
+    "title": "Using Darwin Core with your existing data",
+    "section": "Steps to alignment",
+    "text": "Steps to alignment\nWhat does it look like to map existing data to Darwin Core? Here we share a hypothetical example of a fisheries trawl, and and another of satellite telemetry data from the ATN.\n\nHypothetical Fisheries Trawl Data\nWalkthrough needed….\n\n\n\nExample Satellite Telemetry Data\nWalkthrough needed…."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Standardizing Data with Darwin Core",
+    "section": "",
+    "text": "This guide contains materials associated with an introductory workshop on aligning data to the Darwin Core data standard.\n\nWorkshop topics\n\nWhat data standards are and what they do\nDarwin Core structure\nUsing Darwin Core with your existing data\n\n\n\n\n\n\nIf you’re part of the ROSA and RWSC communities, we’re helping map and publish data this fall. Contact us (kate@intertidal.agency) to join the pilot program!"
   }
 ]
