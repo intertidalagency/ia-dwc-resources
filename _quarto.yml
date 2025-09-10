@@ -60,6 +60,7 @@ format:
     theme:
       - default
       - custom.scss
+    max-width: 900px
     fontcolor: "#ffffff"
     fontsize: 1.2rem
     # linkcolor: "#30ACAE"
