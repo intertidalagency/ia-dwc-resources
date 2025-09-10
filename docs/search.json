@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Standardizing Data with Darwin Core",
+    "title": "ROSA and RWSC Darwin Core 101",
     "section": "",
-    "text": "This guide contains materials associated with an introductory workshop co-hosted by ROSA and RWSC on aligning data to the Darwin Core data standard. Darwin Core is used to publish biological data to public repositories, like OBIS and GBIF, making it easier to find and reuse. This type of data publication is often a requirement from funders and managing agencies, and can add value and increase the impact of your data. We hope these materials provide you a better understanding of how data standards work and how Darwin Core can help get your data published.\n\nTopics covered include\n\nWhat data standards are and what they do\nDarwin Core Basics\nUsing Darwin Core with your existing data\n\n\n\n\n\n\n\nIf you’re part of the ROSA and RWSC communities, we’re helping map and publish data this fall. Contact us  to join the pilot program!",
+    "text": "This guide contains materials associated with an introductory workshop co-hosted by ROSA and RWSC on aligning data to the Darwin Core data standard. Darwin Core is used to publish biological data to public repositories, like OBIS and GBIF, making it easier to find and reuse. This type of data publication is often a requirement from funders and managing agencies, and can add value and increase the impact of your data. We hope these materials provide you a better understanding of how data standards work and how Darwin Core can help get your data published.\n\nTopics covered include\n\nWhat data standards are and what they do\nDarwin Core Basics\nUsing Darwin Core with your existing data\n\n\n\n\n\n\n\nIf you’re part of the ROSA and RWSC communities, we’re helping map and publish data this fall. Contact us at  to join the pilot program!",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Standardizing Data with Darwin Core</span>"
     ]

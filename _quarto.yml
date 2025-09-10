@@ -1,24 +1,16 @@
+# Project Configuration
 project:
   type: book
   output-dir: docs
   resources:
     - assets/**
 
+# Book Configuration
 book:
-  title: ""
-  # authors:
-  #   - name: Rachael Blake
-  #     orcid: 0000-0003-1689-0557
-  #     affiliations: 
-  #       - name: Intertidal Agency
-  #   - Steve Formel
-  #     orcid: 0000-0003-1689-0557
-  #     affiliations: 
-  #       - name: Formel Data Services
-  #   - Kate Wing
-  #     orcid: 0000-0003-1689-0557
-  #     affiliations: 
-  #       - name: Intertidal Agency
+  title: "ROSA and RWSC Darwin Core 101"
+  favicon: img/Intertidal-ProfilePic-Aqua-Bold.png
+  
+  # Navigation
   chapters: 
     - index.qmd
     - data-standards.qmd
@@ -26,68 +18,86 @@ book:
     - align-your-data.qmd
     - resources.qmd
   page-navigation: false
-  favicon: img/Intertidal-ProfilePic-Aqua-Bold.png
+  
+  # Header/Navigation Bar
   navbar: 
     title: false
     background: "#034969"
-    # logo: /img/Intertidal_PrimaryLogo_Bold_White.png
     logo-href: https://intertidal.agency/
+    # logo: img/Intertidal_PrimaryLogo_Bold_White.png
+  
+  # Sidebar Configuration
+  sidebar:
+    style: floating
+    type: light
+    background: "#034969"
+    alignment: left
+    border: false
+  
+  # Search
   search: 
     location: sidebar
     type: textbox
-  sidebar:
-    style: "floating"
-    type: "light"
-    background: "#034969"
-    alignment: "left"
-    border: false
- 
+  
+  # Footer
   page-footer: 
-    left: <a href="https://www.intertidalagency.org/">
-           <img src="img/Intertidal_PrimaryLogo_Bold_White.png" width="105">
-          </a>
+    left: <a href="https://www.intertidalagency.org/"><img src="img/Intertidal_PrimaryLogo_Bold_White.png" width="105"></a>
     center: "Content licensed CC-BY 4.0, Intertidal Agency"
     right: 
       - icon: linkedin
         href: https://www.linkedin.com/company/intertidal-agency/
       - icon: github
         href: https://github.com/intertidalagency/ia-dwc-resources
-    background: "#0E7272"    
+    background: "#0E7272"
 
-    
+# HTML Output Format
 format:
   html:
+    # Theme and Styling
     theme:
       - default
       - custom.scss
-    out-width: "80%"
-    fig-align: center
     css: styles.css
-    max-width: 900px
+    backgroundcolor: "#034969"
     fontcolor: "#ffffff"
     fontsize: 1.2rem
-    html-math-method: mathjax  # or katex
-    html-table-processing: none
-    # linkcolor: "#30ACAE"
+    
+    # Layout and Grid
+    page-layout: article
+    max-width: 900px
+    
+    # Content Formatting
+    out-width: "80%"
+    fig-align: center
     number-sections: false
-    backgroundcolor: "#034969"
-    # monobackgroundcolor: "#034969"
     lightbox: true
+    
+    # Table of Contents
     toc: true
     toc-location: left
     toc-title: ""
     toc-depth: 4
+    
+    # Technical Settings
+    html-math-method: mathjax
+    html-table-processing: none
     author-meta: "Intertidal Agency"
-    page-layout: full
-    grid:
-      sidebar-width: 300px
-      body-width: 2000px
-      margin-width: 150px
-      gutter-width: 3rem
 
-
+# Execution Settings
 execute:
   freeze: auto
-  
-  
-    
+
+# Commented Authors Section (for future use)
+# authors:
+#   - name: Rachael Blake
+#     orcid: 0000-0003-0847-9100
+#     affiliations: 
+#       - name: Intertidal Agency
+#   - name: Stephen Formel
+#     orcid: 0000-0001-7418-1244
+#     affiliations: 
+#       - name: Formel Data Services
+#   - name: Kate Wing
+#     orcid: 0009-0001-0904-2886
+#     affiliations: 
+#       - name: Intertidal Agency
