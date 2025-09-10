@@ -1,0 +1,17 @@
+/* Make all images 80% width and centered */
+img {
+  width: 80%;
+  height: auto;  /* This maintains aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Ensure figures are also centered */
+.quarto-figure {
+  text-align: center;
+}
+
+.quarto-figure img {
+  width: 80%;
+  margin: 0 auto;
+}
