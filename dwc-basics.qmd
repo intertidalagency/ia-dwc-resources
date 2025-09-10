@@ -20,12 +20,11 @@ Generally speaking, Darwin Core can accommodate observations of biological organ
 <br>
 
 ### The Darwin Core Archive - a unit of data sharing
-
 <br>
 
-![Darwin Core Archive structure](img/excalidraw_illustrations/DwC-A.svg){width="80%" fig-alt="Diagram showing the components of a Darwin Core Archive"}
-
 Before we get into the nitty-gritty of Darwin Core, let's talk about the Darwin Core Archive.
+
+![Darwin Core Archive structure](img/excalidraw_illustrations/DwC-A.svg){width="80%" fig-alt="Diagram showing the components of a Darwin Core Archive"}
 
 The Darwin Core Archive is the practical, long-lasting "package" for Darwin Core and for sharing biodiversity data. It is a zip file, ready to stand the test of time. Inside are tables of data (e.g., CSV files) where the columns are Darwin Core terms, describing record-level details (like species names, dates, and locations). A separate EML file (Ecological Metadata Language) provides the dataset-level story: who collected it, when, why, and how the pieces belong together. This combination makes the archive both technically solid and human-understandable, ensuring your data remains useful well into the future.
 
