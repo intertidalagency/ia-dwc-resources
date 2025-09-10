@@ -66,6 +66,7 @@ format:
     number-sections: false
     backgroundcolor: "#034969"
     # monobackgroundcolor: "#034969"
+    lightbox: true
     toc: true
     toc-location: left
     toc-title: ""
