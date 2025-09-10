@@ -3,15 +3,16 @@ title: "Standardizing Data with Darwin Core"
 format: html
 ---
 
-This guide contains materials associated with an introductory workshop on aligning data to the Darwin Core data standard.  
+This guide contains materials associated with an introductory workshop co-hosted by [ROSA](https://www.rosascience.org/) and [RWSC](https://rwsc.org/) on aligning data to the Darwin Core data standard.  [Darwin Core](https://dwc.tdwg.org/) is used to publish biological data to public repositories, like [OBIS](https://obis.org/) and [GBIF](https://www.gbif.org/), making it easier to find and reuse. This type of data publication is often a requirement from funders and managing agencies, and can add value and increase the impact of your data. We hope these materials provide you a better understanding of how data standards work and how Darwin Core can help get your data published.
 
-### Workshop topics
 
-1. What data standards are and what they do
+### Topics covered include
 
-2. Darwin Core structure 
+1. [What data standards are and what they do](./data-standards.html)
 
-3. Using Darwin Core with your existing data
+2. [Darwin Core structure](./dwc-basics.html) 
+
+3. [Using Darwin Core with your existing data](./align-your-data.html)
 
  
 
