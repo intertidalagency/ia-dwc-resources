@@ -21,6 +21,6 @@ This guide contains materials associated with an introductory workshop co-hosted
 :::
 
 ::: {.text-section}
-If you're part of the ROSA and RWSC communities, we're helping map and publish data this fall. Contact us at <span class="email-contact"><span data-name="kate" data-domain="intertidal" data-tld="agency"></span></span> to join the pilot program!
+If you're part of the ROSA and RWSC communities, we're helping map and publish data this fall. Contact us at <span class="email-contact"><span data-name="info" data-domain="intertidal" data-tld="agency"></span></span> to join the pilot program!
 :::
 :::

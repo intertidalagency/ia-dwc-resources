@@ -51,8 +51,6 @@ In studying the US Atlantic ocean, implementing standards enable us to go from d
 
 ![General data flow diagram](img/excalidraw_illustrations/general_data_flow.svg){fig-alt="Diagram showing the flow of data from collection through standards to synthesis"}
 
-## Why use standards?
-
 In short, it can save you time and effort. There are many standards out there that apply to many facets of our data as scientists. Integrating them into your workflows will increase your efficiency and increase the value of your data for people who reuse your data, including yourself.
 
 ![Efficiency benefits of standards](img/excalidraw_illustrations/efficiency.svg){fig-alt="Diagram illustrating how standards improve efficiency in data workflows"}

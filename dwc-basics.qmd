@@ -11,11 +11,17 @@ For communities like those which have developed around offshore development, thi
 
 ### What kind of things fit into Darwin Core?
 
+<br>
+
 ![Data types that fit Darwin Core](img/excalidraw_illustrations/data_types.svg){width="80%" fig-alt="Diagram showing various biological data types that can use Darwin Core"}
 
-Generally speaking, Darwin Core can accommodate observations of biological organisms. Here are some of the data types that have already used Darwin Core to publish to repositories like OBIS and GBIF.
+Generally speaking, Darwin Core can accommodate observations of biological organisms. In the image above are some of the data types that have already used Darwin Core to publish to repositories like OBIS and GBIF.
+
+<br>
 
 ### The Darwin Core Archive - a unit of data sharing
+
+<br>
 
 ![Darwin Core Archive structure](img/excalidraw_illustrations/DwC-A.svg){width="80%" fig-alt="Diagram showing the components of a Darwin Core Archive"}
 
