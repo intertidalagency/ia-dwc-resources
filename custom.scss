@@ -1,64 +1,66 @@
 /*-- scss:defaults --*/
 
-// scss-docs-start color-variables
-$deepsea:    #0F3029 ;
-$wave:  #034969 ;
-$tidepool:  #0E7272 ;
-$aqua:    #30ACAE ;
-$kingfisher:     #CF471F ;
-$sand:  #F3EDE4 ;
-$white:  #ffffff ;
-$black:   #000000 ;
-// scss-docs-end color-variables
-
-
+// ===== COLOR VARIABLES =====
+$deepsea: #0F3029;
+$wave: #034969;
+$tidepool: #0E7272;
+$aqua: #30ACAE;
+$kingfisher: #CF471F;
+$sand: #F3EDE4;
+$white: #ffffff;
+$black: #000000;
 
 /*-- scss:rules --*/
 
-/* Load Google fonts correctly (this pulls real .woff2 files) */
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@0,400;0,700&family=DM+Mono:wght@0,400;0,500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700&display=swap");
+// ===== FONTS =====
+/* Load Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&family=DM+Mono:wght@400;500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700&display=swap");
 
+/* Local font for Signifier */
 @font-face {
   font-family: "Signifier";
   src: url("assets/fonts/Signifier-Regular.otf") format("opentype");
-  /* Prefer WOFF2 if you can: format("woff2") */
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* Remove the old @font-face blocks for Signifier/Public Sans/DM Mono.
-   Keep 'Signifier' only as a name in the stack (no local face declared). */
-
+// ===== TYPOGRAPHY =====
 body {
   font-family: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto,
                "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
 }
 
 h1 {
-  /* If Signifier is present on a machine, it will be used.
-     Otherwise Bodoni Moda takes over cleanly. */
   font-family: "Signifier", "Bodoni Moda", Georgia, "Times New Roman", serif;
-  /* Optionally pick a weight you like for Bodoni Moda: */
-  font-weight: 600; /* try 600–700 for punchy headings */
+  font-weight: 600;
 }
 
-h2{ 
+h2 { 
   font-family: "Public Sans", sans-serif;
   font-weight: 500;
 }
 
 h3 {
-  font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 
+               "Liberation Mono", "Courier New", monospace;
   letter-spacing: 3px;
   font-weight: 500;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
 
-h1, h2, h3, h4 { margin: 0rem; }
+// ===== SPACING =====
+h1, h2, h3, h4 { 
+  margin: 0rem; 
+}
 
 main {
-  ol ol, ul ul, ol ul, ul ol { margin-bottom: unset; }
-  ul p { margin-bottom: 0.2rem; }
+  ol ol, ul ul, ol ul, ul ol { 
+    margin-bottom: unset; 
+  }
+  
+  ul p { 
+    margin-bottom: 0.2rem; 
+  }
 }

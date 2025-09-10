@@ -17,7 +17,7 @@ This guide contains materials associated with an introductory workshop co-hosted
 
 ::: {.image-text-container}
 ::: {.image-section}
-![Contact illustration](img/peep-standing-17.svg){.contact-image fig-alt="A drawing of a woman with a question"}
+![](img/peep-standing-17.svg){.contact-image fig-alt="A drawing of a woman with a question"}
 :::
 
 ::: {.text-section}

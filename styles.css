@@ -1,3 +1,4 @@
+/* ===== MAIN CONTENT IMAGES ===== */
 /* Content images - 80% width and centered */
 main img {
   width: 80%;
@@ -15,42 +16,13 @@ main .quarto-figure img {
   margin: 0 auto;
 }
 
-/* Custom footer styling */
-.custom-footer {
-  background-color: #0E7272;
-  color: white;
-  padding: 20px 0;
-  margin-top: 40px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Footer logo - specific styling that won't be affected */
-.footer-logo {
-  width: 105px !important;
-  height: auto !important;
-  display: inline !important;
-  margin: 0 !important;
-}
-
-.footer-right a {
-  color: white;
-  font-size: 1.2em;
-  margin-left: 10px;
-  text-decoration: none;
-}
-
+/* ===== CONTACT SECTION ===== */
+/* Email obfuscation */
 .email-contact span[data-name]:after {
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
 }
 
+/* Image-text layout */
 .image-text-container {
   display: flex;
   align-items: center;
@@ -67,4 +39,51 @@ main .quarto-figure img {
   height: auto !important;
   display: block !important;
   margin: 0 !important;
+}
+
+.text-section {
+  flex: 1;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 600px) {
+  .image-text-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===== CUSTOM FOOTER ===== */
+.custom-footer {
+  background-color: #0E7272;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  width: 105px !important;
+  height: auto !important;
+  display: inline !important;
+  margin: 0 !important;
+}
+
+.footer-right a {
+  color: white;
+  font-size: 1.2em;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
 }
